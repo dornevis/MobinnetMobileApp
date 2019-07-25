@@ -688,24 +688,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC13-NetPlus\\.nuget\\packages\\": {},
+    "C:\\Users\\Mojtaba\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC13-NetPlus\\Desktop\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj",
+      "projectUniqueName": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj",
       "projectName": "MobinnetMobileAppLibraryStarter",
-      "projectPath": "C:\\Users\\PC13-NetPlus\\Desktop\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj",
-      "packagesPath": "C:\\Users\\PC13-NetPlus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC13-NetPlus\\Desktop\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\obj\\",
+      "projectPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj",
+      "packagesPath": "C:\\Users\\Mojtaba\\.nuget\\packages\\",
+      "outputPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC13-NetPlus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Mojtaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -729,6 +732,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

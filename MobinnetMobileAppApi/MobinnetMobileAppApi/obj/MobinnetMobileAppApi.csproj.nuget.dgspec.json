@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj": {}
+    "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppApi\\MobinnetMobileAppApi\\MobinnetMobileAppApi.csproj": {}
   },
   "projects": {
-    "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj": {
+    "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppApi\\MobinnetMobileAppApi\\MobinnetMobileAppApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj",
-        "projectName": "MobinnetMobileAppLibraryStarter",
-        "projectPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter.csproj",
+        "projectUniqueName": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppApi\\MobinnetMobileAppApi\\MobinnetMobileAppApi.csproj",
+        "projectName": "MobinnetMobileAppApi",
+        "projectPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppApi\\MobinnetMobileAppApi\\MobinnetMobileAppApi.csproj",
         "packagesPath": "C:\\Users\\Mojtaba\\.nuget\\packages\\",
-        "outputPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibraryStarter\\obj\\",
+        "outputPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppApi\\MobinnetMobileAppApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -23,14 +23,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -41,12 +41,23 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             }
           },
