@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibrary\\MobinnetMobileAppLibrary.csproj": {}
+  },
+  "projects": {
+    "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibrary\\MobinnetMobileAppLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibrary\\MobinnetMobileAppLibrary.csproj",
+        "projectName": "MobinnetMobileAppLibrary",
+        "projectPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibrary\\MobinnetMobileAppLibrary.csproj",
+        "packagesPath": "C:\\Users\\Mojtaba\\.nuget\\packages\\",
+        "outputPath": "D:\\Dornevis\\MobinnetMobileApp\\MobinnetMobileAppLibraryStarter\\MobinnetMobileAppLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mojtaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "DNTPersianUtils.Core": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.12, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

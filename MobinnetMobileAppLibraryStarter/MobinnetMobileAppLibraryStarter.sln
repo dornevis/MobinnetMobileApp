@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobinnetMobileAppLibraryStarter", "MobinnetMobileAppLibraryStarter\MobinnetMobileAppLibraryStarter.csproj", "{E751F333-59CD-4714-A1E0-6346533A13B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobinnetMobileAppLibraryStarter", "MobinnetMobileAppLibraryStarter\MobinnetMobileAppLibraryStarter.csproj", "{E751F333-59CD-4714-A1E0-6346533A13B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobinnetMobileAppLibrary", "MobinnetMobileAppLibrary\MobinnetMobileAppLibrary.csproj", "{28F69000-EE8C-4387-90CF-5495456C7521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E751F333-59CD-4714-A1E0-6346533A13B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E751F333-59CD-4714-A1E0-6346533A13B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E751F333-59CD-4714-A1E0-6346533A13B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F69000-EE8C-4387-90CF-5495456C7521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F69000-EE8C-4387-90CF-5495456C7521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F69000-EE8C-4387-90CF-5495456C7521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F69000-EE8C-4387-90CF-5495456C7521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
