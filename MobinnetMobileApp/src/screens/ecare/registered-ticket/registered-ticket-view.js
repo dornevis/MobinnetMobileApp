@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import styles from './usage-style'
+import styles from './registered-ticket-style'
 import { View, Text, Image, ScrollView } from 'react-native'
 import { Header, Right, Button, Title, Card, CardItem, Body, Left } from 'native-base';
 import Images from '../../../helpers/images'
 
 
-class UsageView extends Component {
+class RegisteredTicketView extends Component {
 
     constructor(props) {
         super(props);
@@ -16,7 +16,6 @@ class UsageView extends Component {
     async componentDidMount() {
 
     }
-
     onBackScreenClick() {
         this.props.navigation.goBack();
     }
@@ -35,11 +34,11 @@ class UsageView extends Component {
                             </Button>
                         </Left>
                         <Right style={styles.headerRight}>
-                            <Title style={styles.headerTitle}><Text>ریز مصارف</Text></Title>
+                            <Title style={styles.headerTitle}>تیکت‌های ثبت‌شده</Title>
                         </Right>
                     </Header>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem]}>
+                        <CardItem style={[styles.cardItem,]}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -60,12 +59,12 @@ class UsageView extends Component {
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Text style={styles.textInfo}>
-                                            530مگابایت
+                                            14258
                                 </Text>
                                     </View>
                                     <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            کارکرد روزانه
+                                            موضوع
                                 </Text>
                                     </View>
                                 </View>
@@ -76,44 +75,12 @@ class UsageView extends Component {
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Text style={styles.textInfo}>
-                                            0
+                                            بسته شده
                                 </Text>
                                     </View>
                                     <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            کارکرد رایگان
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            0
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            کارکرد شبانه
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            530 مگابایت
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            مجموع کارکرد
+                                            وضعیت
                                 </Text>
                                     </View>
                                 </View>
@@ -124,13 +91,78 @@ class UsageView extends Component {
                                 <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Text style={styles.textInfo}>
-                                            ---
+                                            AHD-225898
                                 </Text>
-                                        {/* <Button style={styles.confirmBtn}><Text style={styles.confirmTextBtn}>دریافت گزارش</Text></Button> */}
                                     </View>
                                     <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            ریز کارکرد
+                                            شماره پیگیری
+                                </Text>
+                                    </View>
+                                </View>
+                            </Body>
+                        </CardItem>
+                    </Card>
+                    <Card style={styles.card}>
+                        <CardItem style={[styles.cardItem,]}>
+                            <Body>
+                                <View style={styles.cardBody}>
+                                    <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
+                                        <Text style={styles.textInfo}>
+                                            1398/05/25
+                                </Text>
+                                    </View>
+                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
+                                            تاریخ
+                                </Text>
+                                    </View>
+                                </View>
+                            </Body>
+                        </CardItem>
+                        <CardItem style={styles.cardItem}>
+                            <Body>
+                                <View style={styles.cardBody}>
+                                    <View style={styles.col}>
+                                        <Text style={styles.textInfo}>
+                                            14258
+                                </Text>
+                                    </View>
+                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
+                                            موضوع
+                                </Text>
+                                    </View>
+                                </View>
+                            </Body>
+                        </CardItem>
+                        <CardItem style={styles.cardItem}>
+                            <Body>
+                                <View style={styles.cardBody}>
+                                    <View style={styles.col}>
+                                        <Text style={styles.textInfo}>
+                                            بسته شده
+                                </Text>
+                                    </View>
+                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
+                                            وضعیت
+                                </Text>
+                                    </View>
+                                </View>
+                            </Body>
+                        </CardItem>
+                        <CardItem style={styles.cardItem}>
+                            <Body>
+                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
+                                        <Text style={styles.textInfo}>
+                                            AHD-225898
+                                </Text>
+                                    </View>
+                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
+                                            شماره پیگیری
                                 </Text>
                                     </View>
                                 </View>
@@ -143,4 +175,4 @@ class UsageView extends Component {
     }
 }
 
-export default UsageView;
+export default RegisteredTicketView;

@@ -17,8 +17,15 @@ export default routeNames = {
         record: "Record",
         paymentReport: "PaymentReport",
         extraQouta: "ExrtaQouta",
-        internetReport:"Internetreport",
-        myServices:"MyServices",
-        ecareRoot:"EcareRoot"
+        internetReport: "InternetReport",
+        myServices: "MyServices",
+        ecareRoot: "EcareRoot",
+        completeInfo: "CompleteInfo",
+        ipGuide: "IPGuide",
+        plan: "Plan",
+        reservationBank: "ReservationBank",
+        registeredTicket: "RegisteredTicket",
+        editHistory: "EditHistory",
+        gift: "Gift"
     }
 }

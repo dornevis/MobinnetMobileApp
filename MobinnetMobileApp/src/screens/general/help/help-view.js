@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styles from './help-style'
 import { View, Text, Button } from 'native-base'
-import { Image, ImageBackground,Linking } from 'react-native'
+import { Image, ImageBackground, Linking } from 'react-native'
 import Images from '../../../helpers/images'
 
 class HelpView extends Component {
@@ -26,6 +26,10 @@ class HelpView extends Component {
         Linking.openURL('https://my.mobinnet.ir/videos/Mobinnet-User-Page-Guide%20-%20V%2002.mp4');
     }
 
+    onNavigateToFAQScreenClick() {
+        this.props.navigation.navigate(routeNames.general.help, {})
+    }
+
     render() {
         return (
             <View style={styles.view}>
@@ -48,6 +52,10 @@ class HelpView extends Component {
                         <Button light style={styles.helpBtn} onPress={this.onDownloadVideoClick.bind(this)}>
                             <Text style={styles.helpBtnText}>دانلود فیلم آموزشی</Text>
                             <Image source={Images.getHelpVideoIcon} style={styles.helpNoteIcon} />
+                        </Button>
+                        <Button light style={styles.helpBtn} onPress={this.onNavigateToFAQScreenClick.bind(this)}>
+                            <Text style={styles.helpBtnText}>سوالات متداول</Text>
+                            <Image source={Images.getFAQIcon} style={styles.helpNoteIcon} />
                         </Button>
                     </View>
                     <Button onPress={this.onBackClick.bind(this)} small light style={[styles.transparentBtn, styles.backBtn]}><Text style={styles.backBtnText}>بازگشت به<Text style={styles.backText}>صفحه ورود</Text></Text></Button>

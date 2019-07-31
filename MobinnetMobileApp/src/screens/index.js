@@ -1,7 +1,46 @@
 import { SplashScreen, LoginScreen, RegisterScreen, RegisterTokenScreen, ForgotPasswordScreen, ResetPasswordScreen, HelpScreen, ProfileScreen } from './general';
-import { CreateAccountScreen, EcareHomeScreen, BuyGigPackScreen, UsageScreen, RecordScreen, PaymentReportScreen, ExtraQoutaScreen, InternetReportScreen,MyServicesScreen } from './ecare';
+import {
+    CreateAccountScreen,
+    EcareHomeScreen,
+    BuyGigPackScreen,
+    UsageScreen,
+    RecordScreen,
+    PaymentReportScreen,
+    ExtraQoutaScreen,
+    InternetReportScreen,
+    MyServicesScreen,
+    CompleteInfoScreen,
+    IPGuideScreen,
+    PlanScreen,
+    ReservationBankScreen,
+    RegisteredTicketScreen,
+    EditHistoryScreen,
+    GiftScreen
+} from './ecare';
 
 export {
-    SplashScreen, LoginScreen, RegisterScreen, RegisterTokenScreen, ForgotPasswordScreen, ResetPasswordScreen, HelpScreen, ProfileScreen,
-    CreateAccountScreen, EcareHomeScreen, BuyGigPackScreen, UsageScreen, RecordScreen, PaymentReportScreen, ExtraQoutaScreen, InternetReportScreen, MyServicesScreen
+    SplashScreen,
+    LoginScreen,
+    RegisterScreen,
+    RegisterTokenScreen,
+    ForgotPasswordScreen,
+    ResetPasswordScreen,
+    HelpScreen,
+    ProfileScreen,
+    CreateAccountScreen,
+    EcareHomeScreen,
+    BuyGigPackScreen,
+    UsageScreen,
+    RecordScreen,
+    PaymentReportScreen,
+    ExtraQoutaScreen,
+    InternetReportScreen,
+    MyServicesScreen,
+    CompleteInfoScreen,
+    IPGuideScreen,
+    PlanScreen,
+    ReservationBankScreen,
+    RegisteredTicketScreen,
+    EditHistoryScreen,
+    GiftScreen
 };

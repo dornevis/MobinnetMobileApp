@@ -39,6 +39,7 @@ export default StyleSheet.create({
         lineHeight: 31,
         paddingRight: 20,
         paddingLeft: 20,
+        fontWeight: 'bold',
         textAlign: 'right',
         marginBottom: 15,
     },
@@ -61,7 +62,8 @@ export default StyleSheet.create({
         fontSize: 9,
         color: 'gray',
         textAlign: 'right',
-        paddingRight: 5
+        paddingRight: 5,
+        fontWeight: 'bold'
     },
     helpView: {
         position: 'relative',

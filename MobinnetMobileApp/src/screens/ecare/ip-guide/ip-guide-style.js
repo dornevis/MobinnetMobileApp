@@ -25,6 +25,29 @@ export default StyleSheet.create({
         alignItems: 'center',
         display: 'flex',
     },
+    guideText: {
+        fontSize: 8,
+        color: '#333',
+        lineHeight: 31,
+        paddingRight: 5,
+        textAlign: 'center',
+        fontWeight: 'bold',
+    },
+    titleImage: {
+        borderRadius: 50,
+        width: 60,
+        height: 60,
+        resizeMode: 'contain',
+        alignSelf: 'center',
+    },
+    titleText: {
+        fontSize: 13,
+        marginTop: 10,
+        marginBottom: 10,
+        fontWeight: 'bold',
+        color: '#124d4d',
+        alignSelf: 'center'
+    },
     icon: {
         width: 20,
         resizeMode: "contain",
@@ -77,9 +100,10 @@ export default StyleSheet.create({
         fontWeight: 'bold'
     },
     textCurrency: {
-        fontSize: 13,
-        color: 'gray',
-        fontWeight: 'bold'
+        fontSize: 17,
+        color: '#124d4d',
+        fontWeight: 'bold',
+        marginTop: 15
     },
     priceInfoDetail: {
         fontSize: 20,
@@ -113,6 +137,12 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'center'
     },
+    guideTextView: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 20
+    },
     priceImage: {
         width: 100,
         height: 100,
@@ -120,6 +150,12 @@ export default StyleSheet.create({
         position: 'absolute',
         top: -10,
         right: 0
+    },
+    circle: {
+        width: 6,
+        height: 6,
+        borderRadius: 50,
+        backgroundColor: '#84c126'
     },
     countNumber: {
         backgroundColor: '#fff',
