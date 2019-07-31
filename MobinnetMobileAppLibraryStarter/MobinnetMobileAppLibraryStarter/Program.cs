@@ -6,7 +6,15 @@ namespace MobinnetMobileAppLibraryStarter
     {
         static void Main(string[] args)
         {
-            UpdateProfile();
+            Login();
+        }
+
+        private static void Login()
+        {
+            var loginHandler =
+                new LoginHandler()
+                .SetData("09905495323", "a123456");
+            var response = loginHandler.Process();
         }
 
         private static void UpdateProfile()

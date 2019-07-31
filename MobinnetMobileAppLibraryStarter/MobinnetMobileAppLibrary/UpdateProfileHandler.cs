@@ -52,6 +52,10 @@ namespace MobinnetMobileAppLibrary
                 restRequest.AddCookies(cookies);
                 restRequest.AddParameter("undefined", "{\n\t\"XPassword\":\"" + _newPassword + "\",\n\t\"XName\":\"" + _fullName + "\"\n}", ParameterType.RequestBody);
                 var response = restClient.Execute(restRequest);
+                if (response.StatusCode == HttpStatusCode.InternalServerError)
+                {
+                    return MessageHelper.Code.UpdateProfileFailed;
+                }
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     return response.Content.Contains("\"status\":true") ?

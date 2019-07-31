@@ -51,6 +51,10 @@ namespace MobinnetMobileAppLibrary
                     "xPassword=" + _password + "&" +
                     "cellphone=" + _phoneNumber, ParameterType.RequestBody);
                 var response = restClient.Execute(restRequest);
+                if (response.StatusCode == HttpStatusCode.InternalServerError)
+                {
+                    return MessageHelper.Code.RegisterFailed;
+                }
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     if (response.Content.Contains("کد فعال سازی شناسایی نشد"))

@@ -50,6 +50,10 @@ namespace MobinnetMobileAppLibrary
                 var (restClient, restRequest) = HelperMethods.CreateApiCaller("Profile/LoginHistory", Method.GET);
                 restRequest.AddCookies(cookies);
                 var response = restClient.Execute(restRequest);
+                if (response.StatusCode == HttpStatusCode.InternalServerError)
+                {
+                    return (MessageHelper.Code.LoginHistoryFailed, null);
+                }
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     var loadContentForParser = response.Content.LoadContentForParser();

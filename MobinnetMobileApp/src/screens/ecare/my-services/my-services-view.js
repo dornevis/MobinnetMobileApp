@@ -19,7 +19,7 @@ class MyServicesView extends Component {
     }
 
     onBackClick() {
-        this.props.navigation.navigate(routeNames.general.login, {})
+        this.props.navigation.replace(routeNames.general.login, { });
     }
     
     render() {
@@ -42,7 +42,7 @@ class MyServicesView extends Component {
                                 <Body style={styles.body}>
                                     <Image source={images.getLteImage} style={styles.lteImage} />
                                     <Text style={styles.cardBodyText}>
-                                        صدف‌ نت
+                                        در حال ساخت
                                     </Text>
                                 </Body>
                             </CardItem>
@@ -50,8 +50,8 @@ class MyServicesView extends Component {
                                 <Text style={styles.cardFooterText}>989550098313@lte..mobinnet.net</Text>
                             </CardItem>
                         </Card>
-                        <Button onPress={this.onBackClick.bind(this)} style={styles.confirmBtn}>
-                            <Text style={styles.confirmTextBtn}>اضافه کردن اشتراک</Text>
+                        <Button transparent onPress={this.onBackClick.bind(this)} style={styles.confirmBtn}>
+                            <Text style={styles.confirmTextBtn}>خروج</Text>
                             <Image source={images.getPlusIcon} style={styles.icon} />
                         </Button>
                     </ImageBackground>

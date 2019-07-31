@@ -134,6 +134,14 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+                storeFile file('my-upload-key.keystore')
+                storePassword 'dornevis1398'
+                keyAlias 'my-key-alias'
+                keyPassword 'dornevis1398'
+        }
+    }
     splits {
         abi {
             reset()
@@ -142,7 +150,7 @@ android {
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
-    signingConfigs {
+      signingConfigs {
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'

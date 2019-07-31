@@ -26,10 +26,13 @@ namespace MobinnetMobileAppLibrary.Helper
             ChangePasswordFailed = 1011,
             LoginHistorySuccess = 1012,
             LoginHistoryInvalidUser = 1013,
-            LoginHistoryInvalidFailed = 1014,
+            LoginHistoryFailed = 1014,
             UpdateProfileSuccess = 1015,
             UpdateProfileFailed = 1016,
             UpdateProfileInvalidUser = 1017,
+            LoginSuccess = 1018,
+            LoginFailed = 1019,
+            LoginInvalidData = 1020
         }
 
         public static readonly Dictionary<int, string> ResponseMessages = new Dictionary<int, string>
@@ -48,10 +51,13 @@ namespace MobinnetMobileAppLibrary.Helper
             {(int) Code.ChangePasswordFailed, "امکان تغییر کلمه عبور وجود ندارد. مجددا تلاش کنید"},
             {(int) Code.LoginHistorySuccess, "لیست سوابق ورود دریافت شد"},
             {(int) Code.LoginHistoryInvalidUser, "کاربر معتبر نمی باشد"},
-            {(int) Code.LoginHistoryInvalidFailed, "امکان مشاهده سوابق ورود وجود ندارد. مجددا تلاش کنید"},
+            {(int) Code.LoginHistoryFailed, "امکان مشاهده سوابق ورود وجود ندارد. مجددا تلاش کنید"},
             {(int) Code.UpdateProfileSuccess, "حساب کاربری شما با موفقیت بروزرسانی شد"},
             {(int) Code.UpdateProfileFailed, "امکان بروزرسانی حساب کاربری وجود ندارد. مجددا تلاش کنید"},
             {(int) Code.UpdateProfileInvalidUser, "کاربر معتبر نمی باشد"},
+            {(int) Code.LoginSuccess, "با موفقیت وارد شدید"},
+            {(int) Code.LoginFailed, "امکان ورود به حساب کاربری وجود ندارد. مجددا تلاش کنید"},
+            {(int) Code.LoginInvalidData, "نام کاربری یا کلمه عبور اشتباه است"}
         };
     }
 }

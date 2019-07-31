@@ -48,6 +48,10 @@ namespace MobinnetMobileAppLibrary
                     "newPassword=" + _newPassword + "&" +
                     "cellphone=" + _phoneNumber, ParameterType.RequestBody);
                 var response = restClient.Execute(restRequest);
+                if (response.StatusCode == HttpStatusCode.InternalServerError)
+                {
+                    return MessageHelper.Code.ChangePasswordFailed;
+                }
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     if (response.Content.Contains("کد فعال سازی شناسایی نشد"))

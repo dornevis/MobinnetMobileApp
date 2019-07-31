@@ -28,6 +28,9 @@ const EcareRootStack = createDrawerNavigator(
             activeTintColor: '#00ea0d',
             activeBackgroundColor: '#eee',
         },
+        drawerOpenRoute: 'DrawerOpen',
+        drawerCloseRoute: 'DrawerClose',
+        drawerToggleRoute: 'DrawerToggle',
     },
 
 );
@@ -122,6 +125,12 @@ const AppStack = createStackNavigator(
             screen: BuyGigPackScreen,
             navigationOptions: {
                 title: routeNames.ecare.buyGigPack
+            }
+        },
+        MyServices: {
+            screen: MyServicesScreen,
+            navigationOptions: {
+                title: routeNames.ecare.myServices
             }
         }
     },

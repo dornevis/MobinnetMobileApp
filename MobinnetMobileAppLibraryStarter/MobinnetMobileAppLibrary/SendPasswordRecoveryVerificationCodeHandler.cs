@@ -41,6 +41,10 @@ namespace MobinnetMobileAppLibrary
                 restRequest.AddCookieHeader(mobinEcareAntiforgery);
                 restRequest.AddParameter("undefined", "cellphone=" + _phoneNumber, ParameterType.RequestBody);
                 var response = restClient.Execute(restRequest);
+                if (response.StatusCode == HttpStatusCode.InternalServerError)
+                {
+                    return MessageHelper.Code.SendPasswordRecoveryVerificationCodeFailed;
+                }
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     if (response.Content.Contains("شماره موبایل شناسایی نشد"))

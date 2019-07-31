@@ -1,0 +1,16 @@
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\bin\Debug\netcoreapp2.2\MobinnetMobileAppApi.deps.json
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\bin\Debug\netcoreapp2.2\MobinnetMobileAppApi.runtimeconfig.json
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\bin\Debug\netcoreapp2.2\MobinnetMobileAppApi.runtimeconfig.dev.json
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\bin\Debug\netcoreapp2.2\MobinnetMobileAppApi.dll
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\bin\Debug\netcoreapp2.2\MobinnetMobileAppLibrary.dll
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.csprojAssemblyReference.cache
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.csproj.CoreCompileInputs.cache
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.RazorAssemblyInfo.cache
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.RazorAssemblyInfo.cs
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.AssemblyInfoInputs.cache
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.AssemblyInfo.cs
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.RazorTargetAssemblyInfo.cache
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.csproj.CopyComplete
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\bin\Debug\netcoreapp2.2\MobinnetMobileAppApi.pdb
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.dll
+D:\Dornevis\MobinnetMobileApp\MobinnetMobileAppApi\MobinnetMobileAppApi\obj\Debug\netcoreapp2.2\MobinnetMobileAppApi.pdb
