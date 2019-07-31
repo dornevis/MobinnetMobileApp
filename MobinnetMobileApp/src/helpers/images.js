@@ -33,4 +33,10 @@ export default Images = {
     getCalendarIcon: require('../assets/images/date.png'),
     getLteImage: require('../assets/images/lte.png'),
     getPlusIcon: require('../assets/images/plus.png'),
+    getCompleteInfoIcon: require('../assets/images/takmil.png'),
+    getIPGuideIcon: require('../assets/images/ip.png'),
+    getReservationBankIcon: require('../assets/images/reservation.png'),
+    getFAQIcon: require('../assets/images/faq.png'),
+    getFalseIcon: require('../assets/images/false.png'),
+
 };

@@ -56,7 +56,7 @@ class MyServicesView extends Component {
                         </Button>
                     </ImageBackground>
                 </View>
-            </ScrollView >
+            </ScrollView>
         )
     }
 }

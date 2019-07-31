@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Header, Content, List, ListItem } from 'native-base'
 import { Text, ScrollView, Image, View } from 'react-native';
 import { SafeAreaView, StackActions, NavigationActions } from 'react-navigation';
-import styles from '../components/ecare-drawer-style';
+import styles from '../assets/themes/shared-styles';
 import Images from "../helpers/images";
 import routeNames from "../helpers/route-names";
 

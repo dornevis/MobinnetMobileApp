@@ -174,6 +174,27 @@ class EcareHomeView extends Component {
                             </Body>
                         </CardItem>
                     </Card>
+                    <Card style={[styles.card, { marginBottom: 20 }]}>
+                        <CardItem header style={styles.cardItem}>
+                            <Text style={styles.cardItemText}>خرید گیگ پک</Text>
+                        </CardItem>
+                        <CardItem>
+                            <Body>
+                                <View style={styles.cardBody}>
+                                    <View style={styles.col}>
+                                        <Image
+                                            style={styles.image}
+                                            source={Images.getStaticIPImage} />
+                                    </View>
+
+                                    <View style={[styles.col, { justifyContent: 'flex-end' }]}>
+                                        <Text style={styles.remainMainText}>25</Text>
+                                        <Text style={styles.remainText}>گیگابایت از 30 گیگابات</Text>
+                                    </View>
+                                </View>
+                            </Body>
+                        </CardItem>
+                    </Card>
                 </View>
             </ScrollView>
         )
