@@ -6,11 +6,7 @@ export default StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         position: 'relative',
-    },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        marginBottom: 15
+        backgroundColor: 'rgb(240,241,245)',
     },
     headerProfile: {
         backgroundColor: 'rgb(132,193,37)',
@@ -20,10 +16,10 @@ export default StyleSheet.create({
         marginBottom: 0
     },
     headerTitle: {
-        fontSize: 12,
+        fontSize: 14,
         alignSelf: 'center',
         fontWeight: 'bold',
-        paddingRight: 5
+        paddingRight: 10
     },
     headerRight: {
         justifyContent: 'flex-end',
@@ -41,26 +37,101 @@ export default StyleSheet.create({
         resizeMode: "contain"
     },
     card: {
-        width: 320,
-        height: 180,
+        width: width - 40,
+        height: 280,
         alignSelf: 'center',
         borderRadius: 5,
         shadowColor: 'rgba(0,0,0, .2)',
         borderWidth: 0,
         borderColor: 'transparent',
         elevation: 0,
-        marginBottom: 10,
+        marginBottom: 20,
         justifyContent: 'center',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         position: 'relative',
-        paddingBottom: 10,
-        marginTop: 0
+        backgroundColor: 'transparent',
+    },
+    cardResponsive: {
+        width: width - 40,
+        height: 220,
+        alignSelf: 'center',
+        borderRadius: 5,
+        shadowColor: 'rgba(0,0,0, .2)',
+        borderWidth: 0,
+        borderColor: 'transparent',
+        elevation: 0,
+        marginBottom: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundColor: 'transparent',
+    },
+    cardItem: {
+        height: 280,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
+    },
+    cardItemResponsive: {
+        height: 220,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
+    },
+    specialCard: {
+        width: width - 40,
+        height: 250,
+        alignSelf: 'center',
+        borderRadius: 5,
+        shadowColor: 'rgba(0,0,0, .2)',
+        borderWidth: 0,
+        borderColor: 'transparent',
+        elevation: 0,
+        marginBottom: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundColor: 'transparent',
+    },
+    specialCardResponsive: {
+        width: width - 40,
+        height: 200,
+        alignSelf: 'center',
+        borderRadius: 5,
+        shadowColor: 'rgba(0,0,0, .2)',
+        borderWidth: 0,
+        borderColor: 'transparent',
+        elevation: 0,
+        marginBottom: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundColor: 'transparent',
+    },
+    specialCardItem: {
+        height: 250,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
+    },
+    specialCardItemResponsive: {
+        height: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
     },
     specialText: {
         color: '#124d4d',
         fontWeight: 'bold',
-        fontSize: 15,
+        fontSize: 20,
         marginBottom: 10,
+        marginTop: 15
+    },
+    specialTextResponsive: {
+        color: '#124d4d',
+        fontWeight: 'bold',
+        fontSize: 15,
+        marginBottom: 0,
         marginTop: 15
     },
     parentTabView: {
@@ -76,38 +147,98 @@ export default StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        marginRight: 30,
+        marginLeft: 30,
+    },
+    cardBodyContentResponsive: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
         marginRight: 10,
         marginLeft: 10,
+    },
+    cardBodyContentPrice: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 10,
+        marginLeft: 10,
+        marginTop: 20,
     },
     cardBody: {
         flexDirection: 'row',
         width: '50%',
         justifyContent: 'center',
         alignItems: 'center',
-        height: 100,
-        paddingTop: 10
+        marginTop: 11
+    },
+    specialCardBody: {
+        flexDirection: 'column',
+        width: '50%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    specialCardBodyResponsive: {
+        flexDirection: 'column',
+        width: '50%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    specialPlanCardBody: {
+        flexDirection: 'column',
+        width: '50%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        top: -35
+    },
+    specialPlanCardBodyResponsive: {
+        flexDirection: 'column',
+        width: '50%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        top: -20
     },
     textInfoTitle: {
+        fontSize: 60,
+        color: '#124d4d',
+        fontWeight: 'bold',
+    },
+    textInfoTitleResponsive: {
         fontSize: 40,
         color: '#124d4d',
         fontWeight: 'bold',
-        marginTop: 5
     },
     textInfoType: {
+        fontSize: 25,
+        color: 'gray',
+        fontWeight: 'bold'
+    },
+    textInfoTypeResponsive: {
         fontSize: 10,
         color: 'gray',
         fontWeight: 'bold'
     },
     planDurationText: {
-        fontSize: 9,
+        fontSize: 20,
         fontWeight: 'bold',
         alignSelf: 'center',
-        color: '#124d4d'
+        color: '#124d4d',
+        marginRight: -10
+    },
+    planDurationTextResponsive: {
+        fontSize: 10,
+        fontWeight: 'bold',
+        alignSelf: 'center',
+        color: '#124d4d',
+        textAlign: 'center',
+        width: 150
     },
     planCategoryView: {
-        backgroundColor: '#84c126',
-        width: 100,
-        height: 20,
+        backgroundColor: '#afce23',
+        width: (width - 30) / 5,
+        height: 30,
         borderTopLeftRadius: 5,
         borderBottomLeftRadius: 5,
         alignItems: 'center',
@@ -116,11 +247,50 @@ export default StyleSheet.create({
         right: 0,
         bottom: 10
     },
+    planCategoryViewResponsive: {
+        backgroundColor: '#afce23',
+        width: (width - 30) / 3,
+        height: 20,
+        borderTopLeftRadius: 5,
+        borderBottomLeftRadius: 5,
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'absolute',
+        right: 0,
+        bottom: 5
+    },
     planSpecialView: {
-        bottom: 40
+        backgroundColor: '#afce23',
+        width: (width - 30) / 5,
+        height: 30,
+        borderTopLeftRadius: 5,
+        borderBottomLeftRadius: 5,
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'absolute',
+        right: 0,
+        bottom: 50
+    },
+    planSpecialViewResponsive: {
+        backgroundColor: '#afce23',
+        width: (width - 30) / 3,
+        height: 20,
+        borderTopLeftRadius: 5,
+        borderBottomLeftRadius: 5,
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'absolute',
+        right: 0,
+        bottom: 50
     },
     planCategoryText: {
-        fontSize: 8,
+        fontSize: 12,
+        fontWeight: 'bold',
+        alignSelf: 'center',
+        color: '#fff'
+    },
+    planCategoryTextResponsive: {
+        fontSize: 10,
         fontWeight: 'bold',
         alignSelf: 'center',
         color: '#fff'
@@ -129,41 +299,77 @@ export default StyleSheet.create({
         marginTop: 13,
         marginRight: -5
     },
+    specialPlanDurationView: {
+        marginTop: 13,
+    },
     textCurrency: {
-        fontSize: 13,
+        fontSize: 20,
+        color: 'gray',
+        fontWeight: 'bold'
+    },
+    textCurrencyResponsive: {
+        fontSize: 10,
         color: 'gray',
         fontWeight: 'bold'
     },
     priceInfoDetail: {
+        fontSize: 30,
+        color: '#124d4d',
+        fontWeight: 'bold'
+    },
+    priceInfoDetailResponsive: {
         fontSize: 20,
         color: '#124d4d',
         fontWeight: 'bold'
     },
     priceInfo: {
+        fontSize: 60,
+        color: '#124d4d',
+        fontWeight: 'bold'
+    },
+    priceInfoResponsive: {
         fontSize: 40,
         color: '#124d4d',
         fontWeight: 'bold'
     },
     confirmTextBtn: {
         color: '#fff',
-        fontSize: 9,
+        fontSize: 15,
+        fontWeight: 'bold'
+    },
+    confirmTextBtnResponsive: {
+        color: '#fff',
+        fontSize: 10,
         fontWeight: 'bold'
     },
     bodyContent: {
         position: 'relative',
         backgroundColor: 'transparent',
-        width: 320,
+        width: width - 40,
+        marginBottom: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        alignSelf:'center'
+        alignSelf: 'center',
     },
     priceImage: {
-        width: 100,
-        height: 100,
+        width: 200,
+        height: 200,
         resizeMode: 'contain',
         position: 'absolute',
-        top: -10,
-        right: 0
+        top: -50,
+        right: 0,
+        left: (width - 30) / 14,
+        alignSelf: 'center',
+    },
+    priceImageResponsive: {
+        width: 110,
+        height: 110,
+        resizeMode: 'contain',
+        position: 'absolute',
+        top: -30,
+        right: 0,
+        left: (width - 30) / 15,
+        alignSelf: 'center',
     },
     countNumber: {
         backgroundColor: '#fff',
@@ -175,7 +381,7 @@ export default StyleSheet.create({
         color: '#333',
         fontSize: 8,
         position: 'absolute',
-        right: 0.5,
+        right: 1,
         paddingTop: 3,
         fontWeight: 'bold',
         top: -12,
@@ -185,27 +391,40 @@ export default StyleSheet.create({
     tabBody: {
         marginBottom: 15
     },
+    specialTabBody: {
+        marginBottom: 5
+    },
     borderStyle: {
         width: 10,
-        height: 100,
+        height: 110,
         resizeMode: 'contain',
         position: 'relative',
         right: 5,
     },
+    specialBorderStyle: {
+        width: 10,
+        height: 110,
+        resizeMode: 'contain',
+        position: 'relative',
+        right: 5,
+        top: -20
+    },
     textTabBar: {
         color: '#124d4d',
-        fontSize: 8,
-        fontWeight: 'bold'
+        fontSize: 10,
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     activeTextTabBar: {
         color: '#124d4d',
         backgroundColor: '#84c124',
-        fontSize: 8,
+        fontSize: 10,
         paddingTop: 5,
         paddingRight: 5, paddingLeft: 5,
         paddingBottom: 5,
         borderRadius: 3,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     tabstyle: {
         backgroundColor: '#fff',
@@ -213,26 +432,58 @@ export default StyleSheet.create({
     },
     confirmBtn: {
         backgroundColor: 'rgb(132,193,37)',
-        height: 23,
+        height: 35,
+        width: 130,
+        borderRadius: 20,
+        justifyContent: 'center',
+        marginTop: 20,
+        alignSelf: 'center'
+    },
+    confirmBtnResponsive: {
+        backgroundColor: 'rgb(132,193,37)',
+        height: 25,
         width: 90,
         borderRadius: 13,
         justifyContent: 'center',
-        marginTop: -15,
-        marginLeft: 35
+        marginTop: 20
     },
     reservationBtn: {
         backgroundColor: 'rgb(132,193,37)',
-        height: 21,
-        width: 50,
-        borderRadius: 12,
+        height: 35,
+        width: 90,
+        borderRadius: 17,
         justifyContent: 'center',
-        marginTop: 6,
-        marginLeft: 55
+        marginTop: 10,
+        alignSelf: 'center'
+    },
+    reservationBtnResponsive: {
+        backgroundColor: 'rgb(132,193,37)',
+        height: 23,
+        width: 60,
+        borderRadius: 15,
+        justifyContent: 'center',
+        marginTop: 10,
+        alignSelf: 'center'
     },
     specialBtnTab: {
         alignSelf: 'center',
-        marginTop: 20,
-        marginLeft: 0
+        marginTop: -60,
+        marginLeft: 0,
+        backgroundColor: 'rgb(132,193,37)',
+        height: 35,
+        width: 130,
+        borderRadius: 17,
+        justifyContent: 'center',
+        alignSelf: 'center'
+    },
+    specialBtnTabResponsive: {
+        backgroundColor: 'rgb(132,193,37)',
+        height: 25,
+        width: 90,
+        borderRadius: 13,
+        justifyContent: 'center',
+        marginTop: -40,
+        alignSelf: 'center'
     },
     ovalShape: {
         width: 30,
@@ -244,6 +495,13 @@ export default StyleSheet.create({
     infoView: {
         flexDirection: 'row',
         justifyContent: 'space-evenly',
+        alignItems: 'center',
+        marginTop: 10,
+        marginBottom: 20
+    },
+    specialInfoView: {
+        flexDirection: 'row',
+        justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10,
         marginBottom: 20

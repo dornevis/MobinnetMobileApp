@@ -4,15 +4,16 @@ var { width, height } = Dimensions.get('window');
 export default StyleSheet.create({
     view: {
         flex: 1,
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        position: 'relative',
+        backgroundColor: 'transparent',
+        position: 'relative'
     },
     backgroundImage: {
-        width: width,
-        height: height,
-        resizeMode: "stretch",
         position: 'relative',
+        height: height,
+        width: width,
+        position: 'absolute',
+        top: 0,
+        left: 0
     },
     profileText: {
         fontSize: 8,
@@ -26,6 +27,14 @@ export default StyleSheet.create({
     },
     titleImage: {
         borderRadius: 50,
+        width: 80,
+        height: 80,
+        resizeMode: 'contain',
+        alignSelf: 'center',
+        marginTop: 30
+    },
+    titleImageResponsive: {
+        borderRadius: 50,
         width: 60,
         height: 60,
         resizeMode: 'contain',
@@ -33,7 +42,15 @@ export default StyleSheet.create({
         marginTop: 30
     },
     titleText: {
-        fontSize: 13,
+        fontSize: 20,
+        marginTop: 10,
+        marginBottom: 10,
+        fontWeight: 'bold',
+        color: 'gray',
+        alignSelf: 'center'
+    },
+    titleTextResponsive: {
+        fontSize: 15,
         marginTop: 10,
         marginBottom: 10,
         fontWeight: 'bold',
@@ -43,7 +60,7 @@ export default StyleSheet.create({
     icon: {
         width: 10,
         resizeMode: "contain",
-        height:10,
+        height: 10,
         marginLeft: 5
     },
     cardBody: {
@@ -71,17 +88,29 @@ export default StyleSheet.create({
         resizeMode: "contain"
     },
     serviceText: {
-        fontSize: 8,
+        fontSize: 14,
         color: 'gray',
         lineHeight: 31,
-        paddingRight: 20,
-        paddingLeft: 20,
+        paddingRight: 50,
+        paddingLeft: 50,
         textAlign: 'center',
         fontWeight: 'bold',
-        marginBottom: 0,
+        marginBottom: 15,
+        marginTop: 15
+    },
+    serviceTextResponsive: {
+        fontSize: 10,
+        color: 'gray',
+        lineHeight: 31,
+        paddingRight: 30,
+        paddingLeft: 30,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        marginBottom: 15,
+        marginTop: 15
     },
     card: {
-        width: 300,
+        width: width - 50,
         alignSelf: 'center',
         shadowColor: 'rgba(0,0,0, .2)',
         borderWidth: 0,
@@ -101,7 +130,7 @@ export default StyleSheet.create({
         borderTopRightRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
-        height: 90
+        height: 100
     },
     body: {
         alignItems: 'center',
@@ -110,7 +139,7 @@ export default StyleSheet.create({
     },
     cardFooter: {
         backgroundColor: '#124d4d',
-        height: 20,
+        height: 30,
         borderBottomLeftRadius: 5,
         borderBottomRightRadius: 5,
         borderTopLeftRadius: 0,
@@ -144,7 +173,7 @@ export default StyleSheet.create({
         marginTop: 5,
         justifyContent: 'center',
         alignItems: 'center',
-        alignSelf:'center'
+        alignSelf: 'center'
     },
     confirmTextBtn: {
         color: '#00ba0d',

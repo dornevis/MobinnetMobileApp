@@ -20,10 +20,10 @@ export default StyleSheet.create({
         marginBottom: 20
     },
     headerTitle: {
-        fontSize: 12,
+        fontSize: 14,
         alignSelf: 'center',
         fontWeight: 'bold',
-        paddingRight: 5
+        paddingRight: 10
     },
     headerRight: {
         justifyContent: 'flex-end',
@@ -31,16 +31,34 @@ export default StyleSheet.create({
         display: 'flex'
     },
     reservationText: {
-        fontSize: 8,
+        fontSize: 13,
         color: '#333',
         lineHeight: 31,
-        paddingRight: 20,
-        paddingLeft: 20,
+        paddingRight: 50,
+        paddingLeft: 50,
         textAlign: 'center',
         fontWeight: 'bold',
-        marginBottom: 0,
+        marginBottom: 10,
+    },
+    reservationTextResponsive: {
+        fontSize: 10,
+        color: '#333',
+        lineHeight: 31,
+        paddingRight: 30,
+        paddingLeft: 30,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        marginBottom: 10,
     },
     titleImage: {
+        borderRadius: 50,
+        width: 80,
+        height: 80,
+        resizeMode: 'contain',
+        alignSelf: 'center',
+        marginTop: 0
+    },
+    titleImageResponsive: {
         borderRadius: 50,
         width: 60,
         height: 60,
@@ -49,6 +67,14 @@ export default StyleSheet.create({
         marginTop: 0
     },
     titleText: {
+        fontSize: 17,
+        marginTop: 25,
+        marginBottom: 25,
+        fontWeight: 'bold',
+        color: '#124d4d',
+        alignSelf: 'center'
+    },
+    titleTextResponsive: {
         fontSize: 13,
         marginTop: 10,
         marginBottom: 10,
@@ -64,7 +90,7 @@ export default StyleSheet.create({
     falseIcon: {
         width: 8,
         height: 8,
-        marginLeft:3
+        marginLeft: 3
     },
     cardBody: {
         flexDirection: 'row',
@@ -72,18 +98,14 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: 0,
-        width: 320,
+        width: width - 30,
         paddingBottom: 0,
-        alignSelf: 'center',
-        backgroundColor: '#fff',
-        borderBottomWidth: 1,
-        borderBottomColor: 'gray',
+        alignSelf: 'stretch',
+        backgroundColor: 'transparent',
         paddingRight: 0,
+        paddingLeft: 0,
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
-        borderTopLeftRadius: 5,
-        borderTopRightRadius: 5,
-        paddingLeft: 0,
     },
     image: {
         width: 130,
@@ -91,7 +113,22 @@ export default StyleSheet.create({
         resizeMode: "contain"
     },
     col: {
-        width: 200,
+        width: '60%',
+        paddingTop: 0,
+        paddingRight: 0,
+        paddingLeft: 0,
+        paddingBottom: 0,
+        flexDirection: 'row',
+        height: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#fff',
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+        borderTopLeftRadius: 0,
+        borderTopRightRadius: 0,
+    },
+    colTitle: {
         paddingTop: 0,
         paddingRight: 0,
         paddingLeft: 0,
@@ -99,23 +136,43 @@ export default StyleSheet.create({
         height: 30,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff'
+        backgroundColor: '#124d4d',
+        width: '40%',
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+        borderTopLeftRadius: 0,
+        borderTopRightRadius: 0,
     },
     card: {
-        width: 320,
+        width: width - 40,
+        height: 130,
         alignSelf: 'center',
+        borderRadius: 5,
         shadowColor: 'rgba(0,0,0, .2)',
         borderWidth: 0,
         borderColor: 'transparent',
         elevation: 0,
-        marginBottom: 10,
-        paddingRight: 0,
-        paddingLeft: 0,
-        paddingTop: 0,
-        paddingBottom: 0,
-        flex: 1
+        marginBottom: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundColor: 'transparent',
     },
-
+    cardResponsive: {
+        width: width - 40,
+        height: 100,
+        alignSelf: 'center',
+        borderRadius: 0,
+        shadowColor: 'rgba(0,0,0, .2)',
+        borderWidth: 0,
+        borderColor: 'transparent',
+        elevation: 0,
+        marginBottom: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundColor: 'transparent',
+    },
     cardItem: {
         backgroundColor: 'transparent',
         justifyContent: 'center',
@@ -123,6 +180,18 @@ export default StyleSheet.create({
         paddingBottom: 0,
         paddingRight: 0,
         paddingLeft: 0,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ddd',
+    },
+    cardItemResponsive: {
+        backgroundColor: 'transparent',
+        justifyContent: 'center',
+        paddingTop: 0,
+        paddingBottom: 0,
+        paddingRight: 0,
+        paddingLeft: 0,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ddd',
     },
     cardItemText: {
         color: '#fff',

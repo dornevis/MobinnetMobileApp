@@ -14,6 +14,8 @@ import ReservationBankScreen from './reservation-bank/reservation-bank-view';
 import RegisteredTicketScreen from './registered-ticket/registered-ticket-view';
 import EditHistoryScreen from './edit-history/edit-history-view';
 import GiftScreen from './gift/gift-view';
+import EditServiceScreen from './edit-service/edit-service-view';
+import PaymentResultScreen from './payment-result/payment-result-view';
 
 export {
     CreateAccountScreen,
@@ -31,5 +33,7 @@ export {
     ReservationBankScreen,
     RegisteredTicketScreen,
     EditHistoryScreen,
-    GiftScreen
+    GiftScreen,
+    EditServiceScreen,
+    PaymentResultScreen
 };

@@ -45,5 +45,12 @@ export default StyleSheet.create({
         fontSize: 9,
         color: 'gray',
         fontWeight: 'bold',
+    },
+    modalView:{
+        backgroundColor: "#fff",
+        width: width - 30,
+        height: 50,
+        justifyContent: "center",
+        alignItems: "center"
     }
 });

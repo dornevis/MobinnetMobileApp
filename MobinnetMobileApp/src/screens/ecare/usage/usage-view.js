@@ -47,7 +47,7 @@ class UsageView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -63,7 +63,7 @@ class UsageView extends Component {
                                             530مگابایت
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             کارکرد روزانه
                                 </Text>
@@ -79,7 +79,7 @@ class UsageView extends Component {
                                             0
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             کارکرد رایگان
                                 </Text>
@@ -95,7 +95,7 @@ class UsageView extends Component {
                                             0
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             کارکرد شبانه
                                 </Text>
@@ -111,7 +111,7 @@ class UsageView extends Component {
                                             530 مگابایت
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             مجموع کارکرد
                                 </Text>
@@ -119,16 +119,16 @@ class UsageView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Text style={styles.textInfo}>
                                             ---
                                 </Text>
                                         {/* <Button style={styles.confirmBtn}><Text style={styles.confirmTextBtn}>دریافت گزارش</Text></Button> */}
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             ریز کارکرد
                                 </Text>

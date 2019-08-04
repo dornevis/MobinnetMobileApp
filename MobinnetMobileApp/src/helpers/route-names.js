@@ -26,6 +26,7 @@ export default routeNames = {
         reservationBank: "ReservationBank",
         registeredTicket: "RegisteredTicket",
         editHistory: "EditHistory",
-        gift: "Gift"
+        gift: "Gift",
+        editService: "EditService"
     }
 }

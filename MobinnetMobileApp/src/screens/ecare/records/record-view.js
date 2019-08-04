@@ -40,7 +40,7 @@ class RecordView extends Component {
                         </Right>
                     </Header>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
+                        <CardItem style={styles.cardItem}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -48,7 +48,7 @@ class RecordView extends Component {
                                             سه شنبه
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             روز
                                 </Text>
@@ -64,7 +64,7 @@ class RecordView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -80,7 +80,7 @@ class RecordView extends Component {
                                             F
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             ساعت
                                 </Text>
@@ -96,7 +96,7 @@ class RecordView extends Component {
                                             178.131.86.241
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             IP
                                 </Text>
@@ -104,261 +104,15 @@ class RecordView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Text style={styles.textInfo}>
                                             موفق
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            وضعیت ورود
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                    </Card>
-                    <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            سه شنبه
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            روز
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            1398/05/25
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            تاریخ
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            F
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            ساعت
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            178.131.86.241
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            IP
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
-                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            موفق
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            وضعیت ورود
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                    </Card>
-                    <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            سه شنبه
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            روز
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            1398/05/25
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            تاریخ
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            F
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            ساعت
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            178.131.86.241
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            IP
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
-                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            موفق
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            وضعیت ورود
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                    </Card>
-                    <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            سه شنبه
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            روز
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            1398/05/25
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            تاریخ
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            F
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            ساعت
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            178.131.86.241
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            IP
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
-                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            موفق
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             وضعیت ورود
                                 </Text>

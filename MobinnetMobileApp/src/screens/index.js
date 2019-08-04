@@ -15,7 +15,9 @@ import {
     ReservationBankScreen,
     RegisteredTicketScreen,
     EditHistoryScreen,
-    GiftScreen
+    GiftScreen,
+    EditServiceScreen,
+    PaymentResultScreen
 } from './ecare';
 
 export {
@@ -42,5 +44,7 @@ export {
     ReservationBankScreen,
     RegisteredTicketScreen,
     EditHistoryScreen,
-    GiftScreen
+    GiftScreen,
+    EditServiceScreen,
+    PaymentResultScreen
 };

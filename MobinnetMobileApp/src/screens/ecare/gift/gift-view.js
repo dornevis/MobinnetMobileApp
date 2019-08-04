@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import styles from './gift-style'
-import { View, Text, Image, ScrollView } from 'react-native'
+import { View, Text, Image, ScrollView, Dimensions } from 'react-native'
 import { Header, Right, Button, Title, Card, CardItem, Body, Left } from 'native-base';
 import Images from '../../../helpers/images'
+var { width, height } = Dimensions.get('window');
 
 
 class GiftView extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -34,18 +34,19 @@ class GiftView extends Component {
                             </Button>
                         </Left>
                         <Right style={styles.headerRight}>
-                            <Title style={styles.headerTitle}>هدایا</Title>
+                            <Title style={styles.headerTitle}>بانک هدایا</Title>
                         </Right>
                     </Header>
                     <Image
-                        style={styles.titleImage}
+                        style={width > 769 ? styles.titleImage : styles.titleImageResponsive}
                         source={Images.getReservationBankIcon} />
-                    <Text style={styles.titleText}>رزرو</Text>
-                    <Text style={styles.reservationText}>
+                    <Text style={width > 769 ? styles.titleText : styles.titleTextResponsive}>هدایا</Text>
+                    <Text style={width > 769 ? styles.reservationText : styles.reservationTextResponsive}>
+                        مشترک گرامی، در این قسمت شما قادر به مدیریت طرح‌ها و گیگ‌پک‌های رزروشده خود می‌باشید
                         مشترک گرامی، در این قسمت شما قادر به مدیریت طرح‌ها و گیگ‌پک‌های رزروشده خود می‌باشید
                     </Text>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
+                        <CardItem style={styles.cardItem}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -53,7 +54,7 @@ class GiftView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -69,7 +70,7 @@ class GiftView extends Component {
                                             گیگ‌پک‌
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             نوع هدیه
                                 </Text>
@@ -85,7 +86,7 @@ class GiftView extends Component {
                                             هدیه طرح تمدید-4روز 40گیگابایت
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             توضیحات
                                 </Text>
@@ -93,13 +94,13 @@ class GiftView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Button style={styles.confirmBtn}><Text style={styles.confirmTextBtn}>فعال کن</Text></Button>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             فعال سازی
                                 </Text>
@@ -109,7 +110,7 @@ class GiftView extends Component {
                         </CardItem>
                     </Card>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
+                        <CardItem style={styles.cardItem}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -117,7 +118,7 @@ class GiftView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -133,7 +134,7 @@ class GiftView extends Component {
                                             گیگ‌پک‌
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             نوع هدیه
                                 </Text>
@@ -149,7 +150,7 @@ class GiftView extends Component {
                                             هدیه طرح تمدید-4روز 40گیگابایت
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             توضیحات
                                 </Text>
@@ -157,18 +158,16 @@ class GiftView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
-                                    <View style={[styles.col, { borderBottomLeftRadius: 5, flexDirection: 'row' }]}>
-                                        <Text style={styles.textInfo}>
-                                            فعال‌شده توسط شرکت فن‌آوران دُرنویس
-                                </Text>
+                                <View style={styles.cardBody}>
+                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
+                                        <Text style={styles.textInfo}>فعال شده توسط شرکت فن‌آوران دُرنویس</Text>
                                         <Image source={Images.getFalseIcon} style={styles.falseIcon} />
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            فعال‌سازی
+                                            فعال سازی
                                 </Text>
                                     </View>
                                 </View>

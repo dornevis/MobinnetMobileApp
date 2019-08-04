@@ -3,16 +3,17 @@ var { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     view: {
-        flex: 1,
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         backgroundColor: 'rgb(240,241,245)',
         alignItems: 'center',
+        flex: 1,
         position: 'relative'
     },
     container: {
-        position: 'absolute',
-        top: width / 5,
         alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        flex: 1
     },
     title: {
         color: 'gray',
@@ -20,48 +21,80 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 25
     },
+    titleResponsive: {
+        color: 'gray',
+        fontSize: 13,
+        fontWeight: 'bold',
+        marginBottom: 10
+    },
     logoImage: {
         width: 50,
         height: 35,
         resizeMode: "stretch",
         marginBottom: 15,
-        position: 'absolute',
-        top: 50,
         zIndex: 99
     },
     label: {
-        fontSize: 10,
+        fontSize: 11,
+        color: 'rgb(132,193,37)',
+    },
+    labelResponsive: {
+        fontSize: 9,
         color: 'rgb(132,193,37)',
     },
     input: {
         textAlign: 'right',
         fontSize: 11,
     },
+    inputResponsive: {
+        textAlign: 'right',
+        fontSize: 9,
+    },
     resetPasswordCard: {
-        width: (width / 2) + 95,
-        position: 'relative',
-        top: -6,
+        width: 500,
         height: 230,
         borderWidth: 0,
         borderColor: 'transparent',
         elevation: 0,
         paddingTop: 0,
-        flex: 1,
         alignItems: 'center',
-        zIndex: -1
+        alignSelf: 'center',
+        zIndex: -1,
+    },
+    resetPasswordCardResponsive: {
+        width: 290,
+        height: 230,
+        borderWidth: 0,
+        borderColor: 'transparent',
+        elevation: 0,
+        paddingTop: 0,
+        alignItems: 'center',
+        alignSelf: 'center',
+        zIndex: -1,
     },
     resetPasswordBtn: {
-        width: 55,
-        height: 55,
+        width: 60,
+        height: 60,
         borderRadius: 50,
         borderWidth: 5,
         borderColor: '#eee',
         backgroundColor: 'rgb(132,193,37)',
-        position: 'absolute',
         zIndex: 999,
         justifyContent: 'center',
         elevation: 0,
-        bottom: -20
+        marginTop: -30
+    },
+    resetPasswordResponsive: {
+        width: 50,
+        height: 50,
+        borderRadius: 50,
+        borderWidth: 5,
+        borderColor: '#eee',
+        backgroundColor: 'rgb(132,193,37)',
+        zIndex: 999,
+        justifyContent: 'center',
+        elevation: 0,
+        marginTop: -30,
     },
     form: {
         flex: 1,
@@ -72,17 +105,25 @@ export default StyleSheet.create({
         paddingLeft: 0,
     },
     icon: {
-        width: 12,
+        width: 13,
         resizeMode: "contain",
-        height: 12,
+        height: 13,
         position: 'absolute',
         left: 0
     },
     backgroundImage: {
         resizeMode: "stretch",
-        width: (width / 2) + 95,
+        width: 500,
         height: 140,
-        position: 'relative'
+        position: 'relative',
+        marginBottom: -5
+    },
+    backgroundImageResponsive: {
+        resizeMode: "stretch",
+        width: 290,
+        height: 130,
+        position: 'relative',
+        marginBottom: -10
     },
     textBtn: {
         color: '#fff',

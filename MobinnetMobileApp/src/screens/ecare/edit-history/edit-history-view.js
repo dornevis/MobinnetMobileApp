@@ -38,7 +38,7 @@ class EditHistoryView extends Component {
                         </Right>
                     </Header>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
+                        <CardItem style={styles.cardItem}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -46,7 +46,7 @@ class EditHistoryView extends Component {
                                             شکوه تجارت صدف
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             کاربر
                                 </Text>
@@ -62,7 +62,7 @@ class EditHistoryView extends Component {
                                             lte.mobinnet.net@979845156
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             MSISDN
                                 </Text>
@@ -78,7 +78,7 @@ class EditHistoryView extends Component {
                                             اضافه کردن
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             عملیات
                                 </Text>
@@ -94,7 +94,7 @@ class EditHistoryView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -102,97 +102,15 @@ class EditHistoryView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Text style={styles.textInfo}>
                                             07:00 PM
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            ساعت
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                    </Card>
-                    <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            شکوه تجارت صدف
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            کاربر
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            lte.mobinnet.net@979845156
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            MSISDN
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            اضافه کردن
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            عملیات
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            1398/05/25
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            تاریخ
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
-                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            07:00 PM
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             ساعت
                                 </Text>

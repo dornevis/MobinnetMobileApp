@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './reset-password-style'
-import { Image, View } from 'react-native'
+import { Image, View, Dimensions } from 'react-native'
 import { Card, CardItem, Form, Item, Input, Label, Text, Button } from 'native-base';
 import routeNames from '../../../helpers/route-names';
 import apiConfig from '../../../helpers/api-config';
@@ -9,6 +9,7 @@ import apiResultCodes from '../../../helpers/api-result-codes';
 import defaultMessages from '../../../helpers/default-messages';
 import { Loading } from '../../../components'; import Images from '../../../helpers/images'
 import axios from 'axios'
+var { width, height } = Dimensions.get('window');
 
 class ResetPasswordView extends Component {
 
@@ -90,48 +91,46 @@ class ResetPasswordView extends Component {
     render() {
         return (
             <View style={styles.view}>
-                 {this.state.showLoading &&
+                {this.state.showLoading &&
                     <Loading />
                 }
-                <View style={styles.container}>
-                    <Text style={styles.title}>بازیابی کلمه عبور</Text>
-                    <Image
-                        style={styles.logoImage}
-                        source={Images.getMobinnetLogoImage} />
-                    <Image
-                        style={styles.backgroundImage}
-                        source={Images.getBackgroundImage} />
-                    <Card style={styles.resetPasswordCard}>
-                        <CardItem>
-                            <Form style={styles.form}>
-                                <Item floatingLabel last style={styles.item}>
-                                    <Label style={styles.label}>شماره موبایل</Label>
-                                    <Input style={styles.input} onChangeText={this.onChangeTextPhoneNumber.bind(this)}/>
-                                </Item>
-                                <Image
-                                    style={[styles.icon, { top: 30 }]}
-                                    source={Images.getPhoneIcon} />
-                                <Item floatingLabel last style={styles.item}>
-                                    <Label style={styles.label}>کد بازیابی</Label>
-                                    <Input style={styles.input} onChangeText={this.onChangeTextMobileToken.bind(this)}/>
-                                </Item>
-                                <Image
-                                    style={[styles.icon, { top: 87 }]}
-                                    source={Images.getVerificationCodeIcon} />
-                                <Item floatingLabel last style={styles.item}>
-                                    <Label style={styles.label}>کلمه عبور جدید</Label>
-                                    <Input style={styles.input} secureTextEntry onChangeText={this.onChangeTextNewPassword.bind(this)}/>
-                                </Item>
-                                <Image
-                                    style={[styles.icon, { top: 143 }]}
-                                    source={Images.getEyeSlashIcon} />
-                            </Form>
-                        </CardItem>
-                    </Card>
-                    <Button onPress={this.onResetPasswordClick.bind(this)}  success style={styles.resetPasswordBtn} >
-                        <Text style={styles.textBtn}>تأیید</Text>
-                    </Button>
-                </View>
+                <Text style={width > 769 ? styles.title : styles.titleResponsive}>بازیابی کلمه عبور</Text>
+                <Image
+                    style={styles.logoImage}
+                    source={Images.getMobinnetLogoImage} />
+                <Image
+                    style={width > 1200 ? styles.backgroundImage : styles.backgroundImageResponsive}
+                    source={Images.getBackgroundImage} />
+                <Card style={width > 1200 ? styles.resetPasswordCard : styles.resetPasswordCardResponsive}>
+                    <CardItem>
+                        <Form style={styles.form}>
+                            <Item floatingLabel last style={styles.item}>
+                                <Label style={width > 1200 ? styles.label : styles.labelResponsive}>شماره موبایل</Label>
+                                <Input style={width > 1200 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextPhoneNumber.bind(this)} />
+                            </Item>
+                            <Image
+                                style={[styles.icon, { top: 30 }]}
+                                source={Images.getPhoneIcon} />
+                            <Item floatingLabel last style={styles.item}>
+                                <Label style={width > 1200 ? styles.label : styles.labelResponsive}>کد بازیابی</Label>
+                                <Input style={width > 1200 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextMobileToken.bind(this)} />
+                            </Item>
+                            <Image
+                                style={[styles.icon, { top: 87 }]}
+                                source={Images.getVerificationCodeIcon} />
+                            <Item floatingLabel last style={styles.item}>
+                                <Label style={width > 1200 ? styles.label : styles.labelResponsive}>کلمه عبور جدید</Label>
+                                <Input style={width > 1200 ? styles.input : styles.inputResponsive} secureTextEntry onChangeText={this.onChangeTextNewPassword.bind(this)} />
+                            </Item>
+                            <Image
+                                style={[styles.icon, { top: 143 }]}
+                                source={Images.getEyeSlashIcon} />
+                        </Form>
+                    </CardItem>
+                </Card>
+                <Button onPress={this.onResetPasswordClick.bind(this)} success style={width > 769 ? styles.resetPasswordBtn : styles.resetPasswordBtnResponsive} >
+                    <Text style={styles.textBtn}>تأیید</Text>
+                </Button>
                 <Button onPress={this.onBackClick.bind(this)} small light style={[styles.transparentBtn, styles.backBtn]}><Text style={styles.backBtnText}>بازگشت به<Text style={styles.backText}>صفحه ورود</Text></Text></Button>
             </View>
         )

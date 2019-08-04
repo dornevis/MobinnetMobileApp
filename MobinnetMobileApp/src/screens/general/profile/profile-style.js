@@ -4,39 +4,59 @@ var { width, height } = Dimensions.get('window');
 export default StyleSheet.create({
     view: {
         flex: 1,
-        justifyContent: 'flex-start',
-        alignItems: 'center',
+        backgroundColor: 'transparent',
         position: 'relative'
     },
     backgroundImage: {
-        width: width,
-        height: height,
-        resizeMode: "stretch",
         position: 'relative',
+        height: height,
+        width: width,
+        position: 'absolute',
+        top: 0,
+        left: 0
     },
     headerProfile: {
         backgroundColor: 'rgb(132,193,37)',
         justifyContent: 'center',
         alignItems: 'center',
         display: 'flex',
-        marginBottom: 20
+        marginBottom: 25
     },
     headerTitle: {
-        fontSize: 12,
+        fontSize: 14,
         alignSelf: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        paddingRight: 10
     },
     profileText: {
-        fontSize: 8,
+        fontSize: 13,
         color: '#333',
         lineHeight: 31,
-        paddingRight: 20,
-        paddingLeft: 20,
+        paddingRight: 50,
+        paddingLeft: 50,
         textAlign: 'center',
         fontWeight: 'bold',
-        marginBottom: 0,
+        marginBottom: 20,
+    },
+    profileTextResponsive: {
+        fontSize: 10,
+        color: '#333',
+        lineHeight: 31,
+        paddingRight: 30,
+        paddingLeft: 30,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        marginBottom: 20,
     },
     titleImage: {
+        borderRadius: 50,
+        width: 80,
+        height: 80,
+        resizeMode: 'contain',
+        alignSelf: 'center',
+        marginTop: 0
+    },
+    titleImageResponsive: {
         borderRadius: 50,
         width: 60,
         height: 60,
@@ -45,6 +65,14 @@ export default StyleSheet.create({
         marginTop: 0
     },
     titleText: {
+        fontSize: 17,
+        marginTop: 25,
+        marginBottom: 25,
+        fontWeight: 'bold',
+        color: '#124d4d',
+        alignSelf: 'center'
+    },
+    titleTextResponsive: {
         fontSize: 13,
         marginTop: 10,
         marginBottom: 10,
@@ -71,45 +99,85 @@ export default StyleSheet.create({
     },
     formView: {
         alignItems: 'center',
-        justifyContent: 'center'
+        marginRight: 50,
+        marginLeft: 50,
+        justifyContent: 'center',
+        alignSelf: 'center',
+        width: 400,
+        marginTop: 20
+    },
+    formViewResponsive: {
+        alignItems: 'center',
+        marginRight: 50,
+        marginLeft: 50,
+        justifyContent: 'center',
+        alignSelf: 'center',
+        width: 300,
+        marginTop: 10
+    },
+    formViewPhone: {
+        alignItems: 'center',
+        marginRight: 50,
+        marginLeft: 50,
+        justifyContent: 'center',
+        alignSelf: 'center',
+        width: 200,
+        marginTop: 10
     },
     item: {
-        marginBottom: 15
+        marginBottom: 20,
+        marginLeft: 0,
     },
     label: {
-        fontSize: 9,
+        fontSize: 13,
         color: '#515151',
         fontWeight: 'bold',
+        width: 200,
+    },
+    labelResponsive: {
+        fontSize: 11,
+        color: '#515151',
+        fontWeight: 'bold',
+        width: 200,
     },
     star: {
         fontSize: 10,
         color: 'red',
     },
     form: {
-        width: 200,
-        alignItems: 'center',
-        justifyContent: 'center'
+        alignItems: 'flex-end',
+        justifyContent: 'center',
     },
     input: {
         borderColor: '#124d4d',
-        borderWidth: 1,
+        borderWidth: 0.5,
+        borderRadius: 2,
+        height: 35,
+        marginTop: 10,
+        fontSize: 13,
+        textAlign: 'right'
+    },
+    inputResponsive: {
+        borderColor: '#124d4d',
+        borderWidth: 0.5,
         borderRadius: 2,
         height: 25,
-        marginTop: 5,
-        fontSize: 9,
+        marginTop: 10,
+        fontSize: 11,
         textAlign: 'right'
     },
     confirmBtn: {
-        backgroundColor: 'rgb(132,193,37)',
-        height: 25,
+        backgroundColor: '#84c126',
+        height: 28,
         width: 100,
         borderRadius: 13,
         justifyContent: 'center',
-        marginTop: 5
+        marginTop: 10,
+        marginBottom: 40
     },
     confirmTextBtn: {
         color: '#fff',
-        fontSize: 10,
+        fontSize: 11,
         fontWeight: 'bold'
-    }
+    },
 });

@@ -37,7 +37,7 @@ class PaymentReportView extends Component {
                         </Right>
                     </Header>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
+                        <CardItem style={styles.cardItem}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -45,7 +45,7 @@ class PaymentReportView extends Component {
                                             ملت
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             نام درگاه
                                 </Text>
@@ -61,7 +61,7 @@ class PaymentReportView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -77,7 +77,7 @@ class PaymentReportView extends Component {
                                             1234560
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             شناسه
                                 </Text>
@@ -93,7 +93,7 @@ class PaymentReportView extends Component {
                                             9810 تومان
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             قیمت
                                 </Text>
@@ -109,7 +109,7 @@ class PaymentReportView extends Component {
                                             تأیید شده
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             وضعیت تأیید
                                 </Text>
@@ -125,7 +125,7 @@ class PaymentReportView extends Component {
                                             ---
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             برگشت پول
                                 </Text>
@@ -141,7 +141,7 @@ class PaymentReportView extends Component {
                                             خرید حجم 3 گیگابایت
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             توضیحات
                                 </Text>
@@ -149,15 +149,15 @@ class PaymentReportView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Text style={styles.textInfo}>
                                             یکشنبه 98/05/25 ساعت 14:30
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -167,7 +167,7 @@ class PaymentReportView extends Component {
                         </CardItem>
                     </Card>
                 </View>
-            </ScrollView >
+            </ScrollView>
         )
     }
 }

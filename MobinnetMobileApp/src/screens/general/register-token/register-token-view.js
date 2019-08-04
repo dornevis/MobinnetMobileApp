@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './register-token-style'
-import { Image, View } from 'react-native'
+import { Image, View ,Dimensions} from 'react-native'
 import Images from '../../../helpers/images'
 import axios from 'axios'
 import { Card, CardItem, Form, Item, Input, Label, Text, Button } from 'native-base';
@@ -10,6 +10,7 @@ import toastHelper from '../../../helpers/toast-helper';
 import apiResultCodes from '../../../helpers/api-result-codes';
 import defaultMessages from '../../../helpers/default-messages';
 import { Loading } from '../../../components';
+var { width, height } = Dimensions.get('window');
 
 class RegisterTokenView extends Component {
 
@@ -77,20 +78,19 @@ class RegisterTokenView extends Component {
                 {this.state.showLoading &&
                     <Loading />
                 }
-                <View style={styles.container}>
-                    <Text style={styles.title}>ثبت نام</Text>
+                    <Text style={width > 769 ? styles.title : styles.titleResponsive}>ثبت نام</Text>
                     <Image
                         style={styles.logoImage}
                         source={Images.getMobinnetLogoImage} />
                     <Image
-                        style={styles.backgroundImage}
+                        style={width > 1200 ? styles.backgroundImage : styles.backgroundImageResponsive}
                         source={Images.getBackgroundImage} />
-                    <Card style={styles.registerTokenCard}>
+                    <Card style={width > 1200 ?styles.registerTokenCard:styles.registerTokenCardResponsive}>
                         <CardItem>
                             <Form style={styles.form}>
                                 <Item floatingLabel last style={styles.item}>
-                                    <Label style={styles.label}>شماره موبایل</Label>
-                                    <Input style={styles.input} onChangeText={this.onChangeTextPhoneNumber.bind(this)} />
+                                    <Label style={width > 1200 ? styles.label : styles.labelResponsive}>شماره موبایل</Label>
+                                    <Input style={width > 1200 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextPhoneNumber.bind(this)} />
                                 </Item>
                                 <Image
                                     style={styles.icon}
@@ -98,10 +98,9 @@ class RegisterTokenView extends Component {
                             </Form>
                         </CardItem>
                     </Card>
-                    <Button success style={styles.registerBtn} onPress={this.onRegisterTokenClick.bind(this)}>
+                    <Button success style={width > 769 ? styles.registerBtn : styles.registerBtnResponsive} onPress={this.onRegisterTokenClick.bind(this)}>
                         <Text style={styles.textBtn}>تأیید</Text>
                     </Button>
-                </View>
                 <Button onPress={this.onBackClick.bind(this)} small light style={[styles.transparentBtn, styles.backBtn]}><Text style={styles.backBtnText}>بازگشت به<Text style={styles.backText}>صفحه ورود</Text></Text></Button>
             </View>
         )

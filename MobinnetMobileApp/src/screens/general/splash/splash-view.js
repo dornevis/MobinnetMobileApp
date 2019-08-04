@@ -21,7 +21,7 @@ class SplashView extends Component {
     render() {
         return (
             <ImageBackground source={Images.getSplashBackground} style={styles.backgroundImage}>
-                <Image
+                {/* <Image
                     style={styles.firstCloudImage}
                     source={Images.getCloudImage} />
                 <Image
@@ -37,7 +37,7 @@ class SplashView extends Component {
                     <Image
                         style={styles.logoTextImage}
                         source={Images.getMobinnetTextImage} />
-                </View>
+                </View> */}
             </ImageBackground>
         )
     }

@@ -38,5 +38,10 @@ export default Images = {
     getReservationBankIcon: require('../assets/images/reservation.png'),
     getFAQIcon: require('../assets/images/faq.png'),
     getFalseIcon: require('../assets/images/false.png'),
-
+    getStartIcon: require('../assets/images/stars.png'),
+    getDropDownIcon: require('../assets/images/icon-drop.png'),
+    getGreenLine: require('../assets/images/line-green.png'),
+    getDateIcon: require('../assets/images/date-black.png'),
+    getATMCardIcon: require('../assets/images/card.png'),
+    getBarcodeIcon: require('../assets/images/barcode.png'),
 };

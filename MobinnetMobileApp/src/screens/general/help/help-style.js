@@ -25,7 +25,13 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     helpIcon: {
-        width: 35,
+        width: 80,
+        height: 80,
+        resizeMode: "contain",
+        marginBottom: 20
+    },
+    helpIconResponsive: {
+        width: 40,
         height: 40,
         resizeMode: "contain",
         marginBottom: 20
@@ -34,35 +40,67 @@ export default StyleSheet.create({
         flexDirection: 'row'
     },
     helpText: {
-        fontSize: 9,
+        fontSize: 14,
         color: 'gray',
         lineHeight: 31,
         paddingRight: 20,
         paddingLeft: 20,
         fontWeight: 'bold',
-        textAlign: 'right',
-        marginBottom: 15,
+        textAlign: 'center',
+        marginBottom: 30,
+        marginTop:10
+    },
+    helpTextResponsive: {
+        fontSize: 10,
+        color: 'gray',
+        lineHeight: 31,
+        paddingRight: 20,
+        paddingLeft: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginBottom: 30,
+        marginTop:10
     },
     helpNoteIcon: {
         resizeMode: "contain",
         width: 30,
         height: 50,
-        marginRight: 10
+        marginRight: 15
     },
     helpBtn: {
         backgroundColor: '#fff',
-        width: 190,
-        marginBottom: 6,
+        width: 500,
+        height:70,
+        marginBottom: 25,
         textAlign: 'right',
         flex: 1,
         justifyContent: 'flex-end',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderRadius:5
+    },
+    helpBtnResponsive:{
+        backgroundColor: '#fff',
+        width: 190,
+        height:40,
+        marginBottom: 10,
+        textAlign: 'right',
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        borderRadius:5
     },
     helpBtnText: {
+        fontSize: 13,
+        color: 'gray',
+        textAlign: 'right',
+        paddingRight: 10,
+        fontWeight: 'bold'
+    },
+    helpBtnTextResponsive: {
         fontSize: 9,
         color: 'gray',
         textAlign: 'right',
-        paddingRight: 5,
+        paddingRight: 10,
         fontWeight: 'bold'
     },
     helpView: {

@@ -1,10 +1,12 @@
 import { Dimensions, StyleSheet } from "react-native";
+var { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     view: {
         flex: 1,
         justifyContent: 'center',
         position: 'relative',
+        backgroundColor: 'rgb(240,241,245)',
     },
     headerProfile: {
         backgroundColor: 'rgb(132,193,37)',
@@ -17,12 +19,13 @@ export default StyleSheet.create({
         fontSize: 12,
         alignSelf: 'center',
         fontWeight: 'bold',
-        paddingRight:5
+        paddingRight: 5
     },
-    headerRight: {
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        display: 'flex'
+    headerTitle: {
+        fontSize: 14,
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        paddingRight: 10
     },
     icon: {
         width: 20,
@@ -30,93 +33,179 @@ export default StyleSheet.create({
         height: 20,
     },
     card: {
-        width: 320,
-        height: 130,
+        width: width - 40,
+        height: 240,
         alignSelf: 'center',
         borderRadius: 5,
         shadowColor: 'rgba(0,0,0, .2)',
         borderWidth: 0,
         borderColor: 'transparent',
         elevation: 0,
-        marginBottom: 10,
+        marginBottom: 20,
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        paddingBottom: 20
+        backgroundColor: 'transparent',
+    },
+    cardResponsive: {
+        width: width - 40,
+        height: 180,
+        alignSelf: 'center',
+        borderRadius: 5,
+        shadowColor: 'rgba(0,0,0, .2)',
+        borderWidth: 0,
+        borderColor: 'transparent',
+        elevation: 0,
+        marginBottom: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundColor: 'transparent',
+    },
+    cardItem: {
+        height: 240,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
+    },
+    cardItemResponsive: {
+        height: 180,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
+    },
+    mainBody: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
     },
     body: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        alignSelf: 'center'
     },
     cardBodyContent: {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 10,
-        marginLeft: 10
+        alignSelf:'center',
+        marginLeft: 10,
     },
     cardBody: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         width: '50%',
         justifyContent: 'center',
         alignItems: 'center',
-        height: 100,
-        paddingTop: 10
+        alignSelf:'center',
     },
     textInfoTitle: {
+        fontSize: 60,
+        color: '#124d4d',
+        fontWeight: 'bold',
+    },
+    textInfoTitleResponsive: {
         fontSize: 40,
         color: '#124d4d',
         fontWeight: 'bold',
-        marginTop: 5
     },
     textInfoType: {
+        fontSize: 25,
+        color: 'gray',
+        fontWeight: 'bold'
+    },
+    textInfoTypeResponsive: {
         fontSize: 10,
         color: 'gray',
         fontWeight: 'bold'
     },
     textCurrency: {
-        fontSize: 13,
+        fontSize: 30,
+        color: 'gray',
+        fontWeight: 'bold'
+    },
+    textCurrencyResponsive: {
+        fontSize: 10,
         color: 'gray',
         fontWeight: 'bold'
     },
     priceInfoDetail: {
+        fontSize: 30,
+        color: '#124d4d',
+        fontWeight: 'bold'
+    },
+    priceInfoDetailResponsive: {
         fontSize: 20,
         color: '#124d4d',
         fontWeight: 'bold'
     },
     priceInfo: {
-        fontSize: 40,
+        fontSize: 60,
         color: '#124d4d',
         fontWeight: 'bold',
-        marginTop: 5
+    },
+    priceInfoResponsive: {
+        fontSize: 40,
+        color: '#124d4d',
+        fontWeight: 'bold'
     },
     confirmBtn: {
         backgroundColor: 'rgb(132,193,37)',
-        height: 23,
-        width: 100,
+        height: 35,
+        width: 120,
+        borderRadius: 20,
+        justifyContent: 'center',
+        marginTop: 0,
+        alignSelf: 'center',
+        marginTop: 30
+    },
+    confirmBtnResponsive: {
+        backgroundColor: 'rgb(132,193,37)',
+        height: 25,
+        width: 90,
         borderRadius: 13,
         justifyContent: 'center',
-        marginTop: -25,
-        alignSelf: 'baseline',
-        marginLeft:37
+        marginTop: 30
     },
     confirmTextBtn: {
         color: '#fff',
-        fontSize: 9,
+        fontSize: 15,
+        fontWeight: 'bold'
+    },
+    confirmTextBtnResponsive: {
+        color: '#fff',
+        fontSize: 10,
         fontWeight: 'bold'
     },
     bodyContent: {
         position: 'relative',
-        marginBottom: 20
+        backgroundColor: 'transparent',
+        width: width - 40,
+        marginBottom: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
     },
     priceImage: {
-        width: 100,
-        height: 100,
+        width: 130,
+        height: 140,
         resizeMode: 'contain',
         position: 'absolute',
-        top: -10,
-        right: 0
+        top: -40,
+        right: 0,
+        left: 30,
+        alignSelf: 'center',
+    },
+    priceImageResponsive: {
+        width: 120,
+        height: 130,
+        resizeMode: 'contain',
+        position: 'absolute',
+        top: -60,
+        right: 0,
+        left:0,
+        alignSelf: 'center',
     },
     countNumber: {
         backgroundColor: '#fff',
@@ -128,20 +217,19 @@ export default StyleSheet.create({
         color: '#333',
         fontSize: 8,
         position: 'absolute',
-        right: 20.2,
+        right: 1,
         paddingTop: 3,
         fontWeight: 'bold',
-        top: -10,
+        top: -12,
         zIndex: 3,
-        textAlign: 'center'
+        textAlign: 'center',
     },
     borderStyle: {
-        width: 100,
+        width: ' 55%',
         height: 10,
         resizeMode: 'contain',
         position: 'absolute',
-        bottom:17,
-        left:21
+        bottom: 50,
     }
 
 });

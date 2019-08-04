@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import styles from './ecare-home-style'
-import { View, Text, Image, ScrollView } from 'react-native'
+import { View, Text, Image, ScrollView, Dimensions } from 'react-native'
 import { Header, Right, Button, Title, Card, CardItem, Body } from 'native-base';
 import Images from '../../../helpers/images'
 import Carousel from 'react-native-looped-carousel';
+var { width, height } = Dimensions.get('window');
 
 
 class EcareHomeView extends Component {
@@ -63,8 +64,8 @@ class EcareHomeView extends Component {
                         <CardItem header style={[styles.cardItem, { backgroundColor: '#43b0a9', }]}>
                             <Text style={styles.cardItemText}>مشخصات اشتراک</Text>
                         </CardItem>
-                        <CardItem>
-                            <Body>
+                        <CardItem style={styles.cardItemBody}>
+                            <Body style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Image
@@ -72,14 +73,14 @@ class EcareHomeView extends Component {
                                             source={Images.getUserImage} />
                                     </View>
                                     <View style={[styles.col, { justifyContent: 'flex-end' }]}>
-                                        <Text style={styles.textInfo}>
+                                        <Text style={width > 769 ? styles.textInfo : styles.textInfoResponsive}>
                                             نام مشترک:
                                             پارسا یوسفی
                                 </Text>
-                                        <Text style={styles.textInfo}>
+                                        <Text style={width > 769 ? styles.textInfo : styles.textInfoResponsive}>
                                             شماره شناسه: 12314565
                                 </Text>
-                                        <Text style={styles.textInfo}>
+                                        <Text style={width > 769 ? styles.textInfo : styles.textInfoResponsive}>
                                             طرح شما فعال است
                                 </Text>
                                     </View>
@@ -91,21 +92,19 @@ class EcareHomeView extends Component {
                         <CardItem header style={styles.cardItem}>
                             <Text style={styles.cardItemText}>زمان باقیمانده</Text>
                         </CardItem>
-                        <CardItem>
-                            <Body>
+                        <CardItem style={styles.cardItemBody}>
+                            <Body style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Image
                                             style={styles.image}
                                             source={Images.getClockImage} />
                                     </View>
-
                                     <View style={[styles.col, { justifyContent: 'flex-end' }]}>
                                         <Text style={styles.remainMainText}>2</Text>
-                                        <Text style={styles.remainText}>روز از 30 روز</Text>
-                                        <Text style={styles.remainText}>از تاریخ 97/05/03</Text>
-                                        <Text style={styles.remainText}>از تاریخ 97/05/03</Text>
-
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>روز از 30 روز</Text>
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>از تاریخ 97/05/03</Text>
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>از تاریخ 97/05/03</Text>
                                     </View>
                                 </View>
                             </Body>
@@ -115,8 +114,8 @@ class EcareHomeView extends Component {
                         <CardItem header style={styles.cardItem}>
                             <Text style={styles.cardItemText}>حجم روزانه باقیمانده</Text>
                         </CardItem>
-                        <CardItem>
-                            <Body>
+                        <CardItem style={styles.cardItemBody}>
+                            <Body style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Image
@@ -126,7 +125,7 @@ class EcareHomeView extends Component {
 
                                     <View style={[styles.col, { justifyContent: 'flex-end' }]}>
                                         <Text style={styles.remainMainText}>45</Text>
-                                        <Text style={styles.remainText}>گیگابایت از 60 گیگابات</Text>
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>گیگابایت از 60 گیگابات</Text>
                                     </View>
                                 </View>
                             </Body>
@@ -136,8 +135,8 @@ class EcareHomeView extends Component {
                         <CardItem header style={styles.cardItem}>
                             <Text style={styles.cardItemText}>حجم شبانه باقیمانده</Text>
                         </CardItem>
-                        <CardItem>
-                            <Body>
+                        <CardItem style={styles.cardItemBody}>
+                            <Body style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Image
@@ -147,18 +146,18 @@ class EcareHomeView extends Component {
 
                                     <View style={[styles.col, { justifyContent: 'flex-end' }]}>
                                         <Text style={styles.remainMainText}>25</Text>
-                                        <Text style={styles.remainText}>گیگابایت از 30 گیگابات</Text>
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>گیگابایت از 30 گیگابات</Text>
                                     </View>
                                 </View>
                             </Body>
                         </CardItem>
                     </Card>
-                    <Card style={[styles.card, { marginBottom: 20 }]}>
+                    <Card style={styles.card}>
                         <CardItem header style={styles.cardItem}>
                             <Text style={styles.cardItemText}>Ip ثابت</Text>
                         </CardItem>
-                        <CardItem>
-                            <Body>
+                        <CardItem style={styles.cardItemBody}>
+                            <Body style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Image
@@ -168,18 +167,18 @@ class EcareHomeView extends Component {
 
                                     <View style={[styles.col, { justifyContent: 'flex-end' }]}>
                                         <Text style={styles.remainMainText}>25</Text>
-                                        <Text style={styles.remainText}>گیگابایت از 30 گیگابات</Text>
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>گیگابایت از 30 گیگابات</Text>
                                     </View>
                                 </View>
                             </Body>
                         </CardItem>
                     </Card>
-                    <Card style={[styles.card, { marginBottom: 20 }]}>
+                    <Card style={[styles.card, { marginBottom: 30 }]}>
                         <CardItem header style={styles.cardItem}>
                             <Text style={styles.cardItemText}>خرید گیگ پک</Text>
                         </CardItem>
-                        <CardItem>
-                            <Body>
+                        <CardItem style={styles.cardItemBody}>
+                            <Body style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <View style={styles.cardBody}>
                                     <View style={styles.col}>
                                         <Image
@@ -189,7 +188,7 @@ class EcareHomeView extends Component {
 
                                     <View style={[styles.col, { justifyContent: 'flex-end' }]}>
                                         <Text style={styles.remainMainText}>25</Text>
-                                        <Text style={styles.remainText}>گیگابایت از 30 گیگابات</Text>
+                                        <Text style={width > 769 ? styles.remainText : styles.remainTextResponsive}>گیگابایت از 30 گیگابات</Text>
                                     </View>
                                 </View>
                             </Body>

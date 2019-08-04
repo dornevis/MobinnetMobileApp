@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import styles from './help-style'
 import { View, Text, Button } from 'native-base'
-import { Image, ImageBackground, Linking } from 'react-native'
+import { Image, ImageBackground, Linking, Dimensions } from 'react-native'
 import Images from '../../../helpers/images'
+var { width, height } = Dimensions.get('window');
 
 class HelpView extends Component {
 
@@ -35,26 +36,25 @@ class HelpView extends Component {
             <View style={styles.view}>
                 <ImageBackground source={Images.getWifiBackImage} style={styles.backgroundImage}>
                     <View style={styles.container}>
-                        <Image source={Images.getHelpPageIcon} style={styles.helpIcon} />
+                        <Image source={Images.getHelpPageIcon} style={width > 769 ? styles.helpIcon : styles.helpIconResponsive} />
                         <View style={styles.helpView}>
-                            <Text style={styles.helpText}>
+                            <Text style={width > 769 ? styles.helpText : styles.helpTextResponsive}>
                                 شما می‌توانید با دریافت دفترچه راهنما از لینک زیر تمامی مراحل
-                        {"\n"}
                                 ثبت نام را به راحتی
                                 تکمیل نموده و سریع‌تر به جمع مشترکین
-                         {"\n"} مبین‌نت بپیوندید
+                                مبین‌نت بپیوندید
                 </Text>
                         </View>
-                        <Button light style={styles.helpBtn} onPress={this.onDownloadManualClick.bind(this)}>
-                            <Text style={styles.helpBtnText}>دانلود دفترچه راهنمای ورود</Text>
+                        <Button light style={width > 769 ? styles.helpBtn : styles.helpBtnResponsive} onPress={this.onDownloadManualClick.bind(this)}>
+                            <Text style={width > 769 ? styles.helpBtnText : styles.helpBtnTextResponsive}>دانلود دفترچه راهنمای ورود</Text>
                             <Image source={Images.getHelpNoteIcon} style={styles.helpNoteIcon} />
                         </Button>
-                        <Button light style={styles.helpBtn} onPress={this.onDownloadVideoClick.bind(this)}>
-                            <Text style={styles.helpBtnText}>دانلود فیلم آموزشی</Text>
+                        <Button light style={width > 769 ? styles.helpBtn : styles.helpBtnResponsive} onPress={this.onDownloadVideoClick.bind(this)}>
+                            <Text style={width > 769 ? styles.helpBtnText : styles.helpBtnTextResponsive}>دانلود فیلم آموزشی</Text>
                             <Image source={Images.getHelpVideoIcon} style={styles.helpNoteIcon} />
                         </Button>
-                        <Button light style={styles.helpBtn} onPress={this.onNavigateToFAQScreenClick.bind(this)}>
-                            <Text style={styles.helpBtnText}>سوالات متداول</Text>
+                        <Button light style={width > 769 ? styles.helpBtn : styles.helpBtnResponsive} onPress={this.onNavigateToFAQScreenClick.bind(this)}>
+                            <Text style={width > 769 ? styles.helpBtnText : styles.helpBtnTextResponsive}>سوالات متداول</Text>
                             <Image source={Images.getFAQIcon} style={styles.helpNoteIcon} />
                         </Button>
                     </View>

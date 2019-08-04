@@ -38,7 +38,7 @@ class RegisteredTicketView extends Component {
                         </Right>
                     </Header>
                     <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
+                        <CardItem style={[styles.cardItem]}>
                             <Body>
                                 <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
@@ -46,7 +46,7 @@ class RegisteredTicketView extends Component {
                                             1398/05/25
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderTopRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             تاریخ
                                 </Text>
@@ -62,7 +62,7 @@ class RegisteredTicketView extends Component {
                                             14258
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             موضوع
                                 </Text>
@@ -78,7 +78,7 @@ class RegisteredTicketView extends Component {
                                             بسته شده
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
+                                    <View style={styles.colTitle}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             وضعیت
                                 </Text>
@@ -86,15 +86,15 @@ class RegisteredTicketView extends Component {
                                 </View>
                             </Body>
                         </CardItem>
-                        <CardItem style={styles.cardItem}>
+                        <CardItem style={[styles.cardItem, { borderBottomWidth: 0 }]}>
                             <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
+                                <View style={styles.cardBody}>
                                     <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
                                         <Text style={styles.textInfo}>
                                             AHD-225898
                                 </Text>
                                     </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
+                                    <View style={[styles.colTitle, { borderBottomRightRadius: 5 }]}>
                                         <Text style={[styles.textInfo, { color: '#fff' }]}>
                                             شماره پیگیری
                                 </Text>
@@ -103,72 +103,7 @@ class RegisteredTicketView extends Component {
                             </Body>
                         </CardItem>
                     </Card>
-                    <Card style={styles.card}>
-                        <CardItem style={[styles.cardItem,]}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={[styles.col, { borderTopLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            1398/05/25
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderTopRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            تاریخ
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            14258
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            موضوع
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={styles.cardBody}>
-                                    <View style={styles.col}>
-                                        <Text style={styles.textInfo}>
-                                            بسته شده
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            وضعیت
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                        <CardItem style={styles.cardItem}>
-                            <Body>
-                                <View style={[styles.cardBody, { borderBottomWidth: 0 }]}>
-                                    <View style={[styles.col, { borderBottomLeftRadius: 5 }]}>
-                                        <Text style={styles.textInfo}>
-                                            AHD-225898
-                                </Text>
-                                    </View>
-                                    <View style={[styles.col, { backgroundColor: '#124d4d', width: 120, borderBottomRightRadius: 5 }]}>
-                                        <Text style={[styles.textInfo, { color: '#fff' }]}>
-                                            شماره پیگیری
-                                </Text>
-                                    </View>
-                                </View>
-                            </Body>
-                        </CardItem>
-                    </Card>
+
                 </View>
             </ScrollView>
         )

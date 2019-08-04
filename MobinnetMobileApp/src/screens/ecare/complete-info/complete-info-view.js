@@ -41,7 +41,7 @@ class CompleteInfoView extends Component {
                         <Text style={styles.titleText}>تکمیل اطلاعات</Text>
                         <Text style={styles.infoText}>
                             مشترک گرامی، با تکمیل اطلاعات خود در فرم زیر ما را در ارائه خدمات بهتر یاری فرمایید.
-                </Text>
+                         </Text>
                         <View style={styles.formView}>
                             <Form style={styles.form}>
                                 <View style={styles.formViewFisrtRow}>
@@ -110,7 +110,6 @@ class CompleteInfoView extends Component {
                     </ImageBackground>
                 </View>
             </ScrollView>
-
         )
     }
 }
