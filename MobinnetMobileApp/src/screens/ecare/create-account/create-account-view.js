@@ -81,8 +81,6 @@ class CreateAccountView extends Component {
     render() {
         return (
             <View style={styles.view}>
-                <View>
-                </View>
                 <ScrollView style={{ flex: 1 }}>
                     <ImageBackground source={Images.getWifiBackImage} style={styles.backgroundImage}>
                         <View style={styles.helpView}>

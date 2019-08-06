@@ -255,9 +255,9 @@ import EcareDrawerComponent from '../components/ecare-navigation';
 const AppStack = createStackNavigator(
     {
         Test: {
-            screen: EditServiceScreen,
+            screen: LoginScreen,
             navigationOptions: {
-                title: routeNames.ecare.editService
+                title: routeNames.general.login
             }
         }
     },

@@ -37,7 +37,7 @@ export default StyleSheet.create({
         resizeMode: "contain"
     },
     card: {
-        width: width - 40,
+        width: width - 60,
         height: 280,
         alignSelf: 'center',
         borderRadius: 5,
@@ -52,7 +52,7 @@ export default StyleSheet.create({
         backgroundColor: 'transparent',
     },
     cardResponsive: {
-        width: width - 40,
+        width: width - 60,
         height: 220,
         alignSelf: 'center',
         borderRadius: 5,
@@ -79,7 +79,7 @@ export default StyleSheet.create({
         alignSelf: 'center'
     },
     specialCard: {
-        width: width - 40,
+        width: width - 60,
         height: 250,
         alignSelf: 'center',
         borderRadius: 5,
@@ -94,7 +94,7 @@ export default StyleSheet.create({
         backgroundColor: 'transparent',
     },
     specialCardResponsive: {
-        width: width - 40,
+        width: width - 60,
         height: 200,
         alignSelf: 'center',
         borderRadius: 5,
@@ -147,8 +147,8 @@ export default StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        marginRight: 30,
-        marginLeft: 30,
+        marginRight: 50,
+        marginLeft: 50,
     },
     cardBodyContentResponsive: {
         flexDirection: 'column',
@@ -170,7 +170,7 @@ export default StyleSheet.create({
         width: '50%',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 11
+        marginTop: 10
     },
     specialCardBody: {
         flexDirection: 'column',
@@ -183,6 +183,7 @@ export default StyleSheet.create({
         width: '50%',
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop:3
     },
     specialPlanCardBody: {
         flexDirection: 'column',
@@ -206,12 +207,12 @@ export default StyleSheet.create({
         fontWeight: 'bold',
     },
     textInfoTitleResponsive: {
-        fontSize: 40,
+        fontSize: 35,
         color: '#124d4d',
         fontWeight: 'bold',
     },
     textInfoType: {
-        fontSize: 25,
+        fontSize: 20,
         color: 'gray',
         fontWeight: 'bold'
     },
@@ -225,7 +226,7 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         alignSelf: 'center',
         color: '#124d4d',
-        marginRight: -10
+        marginRight: 0
     },
     planDurationTextResponsive: {
         fontSize: 10,
@@ -284,7 +285,7 @@ export default StyleSheet.create({
         bottom: 50
     },
     planCategoryText: {
-        fontSize: 12,
+        fontSize: 15,
         fontWeight: 'bold',
         alignSelf: 'center',
         color: '#fff'
@@ -305,7 +306,7 @@ export default StyleSheet.create({
     textCurrency: {
         fontSize: 20,
         color: 'gray',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     textCurrencyResponsive: {
         fontSize: 10,
@@ -313,9 +314,9 @@ export default StyleSheet.create({
         fontWeight: 'bold'
     },
     priceInfoDetail: {
-        fontSize: 30,
+        fontSize: 40,
         color: '#124d4d',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     priceInfoDetailResponsive: {
         fontSize: 20,
@@ -323,7 +324,8 @@ export default StyleSheet.create({
         fontWeight: 'bold'
     },
     priceInfo: {
-        fontSize: 60,
+        fontSize: 65,
+        marginTop:10,
         color: '#124d4d',
         fontWeight: 'bold'
     },
@@ -373,6 +375,23 @@ export default StyleSheet.create({
     },
     countNumber: {
         backgroundColor: '#fff',
+        width: 50,
+        height: 35,
+        borderRadius: 0,
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#333',
+        fontSize: 15,
+        position: 'absolute',
+        right: 10,
+        paddingTop: 3,
+        fontWeight: 'bold',
+        top: -21,
+        zIndex: 3,
+        textAlign: 'center',
+    },
+    countNumberResponsive: {
+        backgroundColor: '#fff',
         width: 25,
         height: 20,
         borderRadius: 0,
@@ -381,7 +400,7 @@ export default StyleSheet.create({
         color: '#333',
         fontSize: 8,
         position: 'absolute',
-        right: 1,
+        right: 11,
         paddingTop: 3,
         fontWeight: 'bold',
         top: -12,
@@ -396,6 +415,13 @@ export default StyleSheet.create({
     },
     borderStyle: {
         width: 10,
+        height: 160,
+        resizeMode: 'contain',
+        position: 'relative',
+        right: 5,
+    },
+    borderStyleResponsive: {
+        width: 10,
         height: 110,
         resizeMode: 'contain',
         position: 'relative',
@@ -403,22 +429,54 @@ export default StyleSheet.create({
     },
     specialBorderStyle: {
         width: 10,
-        height: 110,
+        height: 150,
         resizeMode: 'contain',
         position: 'relative',
         right: 5,
         top: -20
     },
+    specialBorderStyleResponsive:{
+        width:10,
+        height: 100,
+        resizeMode: 'contain',
+        position: 'relative',
+        right: 5,
+        top: -20
+    },
+    tabContainer: {
+        height: 80,
+    },
+    tabContainerResponsive: {
+        height: 50
+    },
     textTabBar: {
         color: '#124d4d',
-        fontSize: 10,
+        fontSize: 15,
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
+    textTabBarResponsive: {
+        color: '#124d4d',
+        fontSize: 9,
         fontWeight: 'bold',
         textAlign: 'center'
     },
     activeTextTabBar: {
         color: '#124d4d',
         backgroundColor: '#84c124',
-        fontSize: 10,
+        fontSize: 15,
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingLeft: 10,
+        paddingBottom: 10,
+        borderRadius: 3,
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
+    activeTextTabBarResponsive: {
+        color: '#124d4d',
+        backgroundColor: '#84c124',
+        fontSize: 9,
         paddingTop: 5,
         paddingRight: 5, paddingLeft: 5,
         paddingBottom: 5,
@@ -429,6 +487,8 @@ export default StyleSheet.create({
     tabstyle: {
         backgroundColor: '#fff',
         borderColor: '#84c126',
+        borderWidth: 1,
+        borderBottomWidth: 0
     },
     confirmBtn: {
         backgroundColor: 'rgb(132,193,37)',
@@ -486,18 +546,23 @@ export default StyleSheet.create({
         alignSelf: 'center'
     },
     ovalShape: {
+        width: 60,
+        height: 10,
+        borderRadius: 10,
+        marginRight: 5,
+    },
+    ovalShapeResponsive: {
         width: 30,
         height: 5,
         borderRadius: 5,
         marginRight: 5,
-        backgroundColor: 'blue'
     },
     infoView: {
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        marginTop: 10,
-        marginBottom: 20
+        marginTop: 14,
+        marginBottom: 25
     },
     specialInfoView: {
         flexDirection: 'row',
@@ -507,7 +572,14 @@ export default StyleSheet.create({
         marginBottom: 20
     },
     infoText: {
-        fontSize: 9,
+        fontSize: 17,
+        fontWeight: 'bold',
+        color: '#124d4d',
+        marginRight: 5,
+        marginTop: -3
+    },
+    infoTextResponsive: {
+        fontSize: 12,
         fontWeight: 'bold',
         color: '#124d4d',
         marginRight: 5

@@ -13,7 +13,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         display: 'flex',
-        marginBottom: 25
+        marginBottom: 45
     },
     headerTitle: {
         fontSize: 12,
@@ -90,7 +90,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 10,
-        alignSelf:'center',
+        alignSelf: 'center',
         marginLeft: 10,
     },
     cardBody: {
@@ -98,7 +98,7 @@ export default StyleSheet.create({
         width: '50%',
         justifyContent: 'center',
         alignItems: 'center',
-        alignSelf:'center',
+        alignSelf: 'center',
     },
     textInfoTitle: {
         fontSize: 60,
@@ -144,6 +144,7 @@ export default StyleSheet.create({
         fontSize: 60,
         color: '#124d4d',
         fontWeight: 'bold',
+        marginTop: 15
     },
     priceInfoResponsive: {
         fontSize: 40,
@@ -188,26 +189,43 @@ export default StyleSheet.create({
         alignSelf: 'center',
     },
     priceImage: {
-        width: 130,
-        height: 140,
+        width: 150,
+        height: 150,
         resizeMode: 'contain',
         position: 'absolute',
-        top: -40,
+        top: -70,
         right: 0,
         left: 30,
         alignSelf: 'center',
     },
     priceImageResponsive: {
-        width: 120,
+        width: 130,
         height: 130,
         resizeMode: 'contain',
         position: 'absolute',
         top: -60,
         right: 0,
-        left:0,
+        left: 0,
         alignSelf: 'center',
     },
     countNumber: {
+        backgroundColor: '#fff',
+        width: 35,
+        height: 25,
+        borderRadius: 0,
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#333',
+        fontSize: 13,
+        position: 'absolute',
+        right: 1,
+        paddingTop: 3,
+        fontWeight: 'bold',
+        top: -17,
+        zIndex: 3,
+        textAlign: 'center',
+    },
+    countNumberResponsive: {
         backgroundColor: '#fff',
         width: 25,
         height: 20,
@@ -217,7 +235,7 @@ export default StyleSheet.create({
         color: '#333',
         fontSize: 8,
         position: 'absolute',
-        right: 1,
+        right: 0.5,
         paddingTop: 3,
         fontWeight: 'bold',
         top: -12,
@@ -225,11 +243,18 @@ export default StyleSheet.create({
         textAlign: 'center',
     },
     borderStyle: {
-        width: ' 55%',
+        width: 160,
+        height: 10,
+        resizeMode: 'contain',
+        position: 'absolute',
+        bottom: 60,
+    },
+    borderStyleResponsive: {
+        width: 150,
         height: 10,
         resizeMode: 'contain',
         position: 'absolute',
         bottom: 50,
+        zIndex: 999
     }
-
 });

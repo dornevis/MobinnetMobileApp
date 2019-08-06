@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styles from './login-style'
 import axios from 'axios'
-import { Image, View, Dimensions } from 'react-native'
+import { Image, View, Dimensions, ScrollView } from 'react-native'
 import { Card, CardItem, Form, Item, Input, Label, Text, Button } from 'native-base';
 import Images from '../../../helpers/images'
 import routeNames from '../../../helpers/route-names';
@@ -10,6 +10,7 @@ import toastHelper from '../../../helpers/toast-helper';
 import apiResultCodes from '../../../helpers/api-result-codes';
 import defaultMessages from '../../../helpers/default-messages';
 import { Loading } from '../../../components';
+import styleCompatibility from '../../../helpers/style-compatibility'
 var { width, height } = Dimensions.get('window');
 
 class LoginView extends Component {
@@ -17,10 +18,10 @@ class LoginView extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showPassword: false,
             phoneNumber: "",
             password: "",
-            showLoading: false
+            showLoading: false,
+            togglePassword: false
         }
     }
 
@@ -38,6 +39,10 @@ class LoginView extends Component {
 
     onHelpClick() {
         this.props.navigation.navigate(routeNames.general.help, {})
+    }
+
+    onTogglePassword() {
+        this.setState({ togglePassword: !this.state.togglePassword })
     }
 
     onLoginClick() {
@@ -92,52 +97,55 @@ class LoginView extends Component {
     render() {
         return (
             <View style={styles.view}>
-                {this.state.showLoading &&
-                    <Loading />
-                }
-                <Text style={width > 769 ? styles.title : styles.titleResponsive}>ورود به پنل کاربری</Text>
-                <Image
-                    style={styles.logoImage}
-                    source={Images.getMobinnetLogoImage} />
-                <Image
-                    style={width > 1200 ? styles.backgroundImage : styles.backgroundImageResponsive}
-                    source={Images.getBackgroundImage} />
-                <Card style={width > 1200 ? styles.loginCard : styles.loginCardResponsive}>
-                    <CardItem>
-                        <Form style={styles.form}>
-                            <Item floatingLabel last style={styles.item}>
-                                <Label style={width > 1200 ? styles.label : styles.labelResponsive}>شماره موبایل</Label>
-                                <Input style={width > 1200 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextPhoneNumber.bind(this)} />
-                            </Item>
-                            <Image
-                                style={[styles.icon, { top: 30 }]}
-                                source={Images.getPhoneIcon}
-
-                            />
-                            <Item floatingLabel last style={styles.item}>
-                                <Label style={width > 1200 ? styles.label : styles.labelResponsive}>کلمه عبور</Label>
-                                <Input style={width > 1200 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextPassword.bind(this)} secureTextEntry={!this.state.showPassword} />
-                            </Item>
-                            <Image
-                                style={[styles.icon, { top: 87 }]}
-                                source={Images.getEyeSlashIcon} />
-                        </Form>
-                    </CardItem>
-                </Card>
-                <Button onPress={this.onLoginClick.bind(this)} success style={width > 769 ? styles.loginBtn : styles.loginBtnResponsive} >
-                    <Text style={styles.textBtn}>ورود</Text>
-                </Button>
-                <View style={width > 1200 ? styles.loginFooter : styles.loginFooterResponsive}>
-                    <Button small light style={[styles.transparentBtn]}
-                        onPress={this.onHelpClick.bind(this)}>
-                        <Text style={styles.forgotText}>راهنمای ورود</Text>
-                        <Image
-                            style={styles.helpIcon}
-                            source={Images.getHelpIcon} />
+                <View style={styles.container}>
+                    {this.state.showLoading &&
+                        <Loading />
+                    }
+                    <Text style={width > 991 ? styles.title : styles.titleResponsive}>ورود به پنل کاربری</Text>
+                    <Image
+                        style={width > 991 ? styles.logoImage : styles.logoImageResponsive}
+                        source={Images.getMobinnetLogoImage} />
+                    <Image
+                        style={styles.headerImage}
+                        source={Images.getBackgroundImage} />
+                    <Card style={styles.loginCard}>
+                        <CardItem>
+                            <Form style={styles.form}>
+                                <Item floatingLabel last style={width > 991 ? styles.item : styles.itemResponsive}>
+                                    <Label style={styles.label}>شماره موبایل</Label>
+                                    <Input style={width > 991 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextPhoneNumber.bind(this)} />
+                                </Item>
+                                <Image
+                                    style={[styles.icon, width > 991 ? styles.phoneIcon : styles.phoneIconResponsive]}
+                                    source={Images.getPhoneIcon}
+                                />
+                                <Item floatingLabel last style={width > 991 ? styles.item : styles.itemResponsive}>
+                                    <Label style={styles.label}>کلمه عبور</Label>
+                                    <Input style={width > 991 ? styles.input : styles.inputResponsive} onChangeText={this.onChangeTextPassword.bind(this)} secureTextEntry={!this.state.togglePassword} />
+                                </Item>
+                                <Button style={[styles.icon, styles.btnIcon, width > 991 ? styles.eyeIcon : styles.eyeIconResponsive]} small light onPress={this.onTogglePassword.bind(this)}>
+                                    <Image
+                                        style={width > 991 ? styles.icon : styles.iconResponsive}
+                                        source={this.state.togglePassword ? Images.getEyeIcon : Images.getEyeSlashIcon} />
+                                </Button>
+                            </Form>
+                        </CardItem>
+                    </Card>
+                    <Button onPress={this.onLoginClick.bind(this)} success style={[styles.loginBtn, styleCompatibility.getAuthFormCircleButton()]} >
+                        <Text style={styles.textBtn}>ورود</Text>
                     </Button>
-                    <Button small light style={[styles.transparentBtn]} onPress={this.onForgotPasswordClick.bind(this)}><Text style={styles.forgotText}>فراموشی کلمه عبور!</Text></Button>
+                    <View style={styles.loginFooter}>
+                        <Button small light style={[styles.transparentBtn]}
+                            onPress={this.onHelpClick.bind(this)}>
+                            <Text style={width > 991 ? styles.forgotText : styles.forgotTextResponsive}>راهنمای ورود</Text>
+                            <Image
+                                style={width > 991 ? styles.helpIcon : styles.helpIconResponsive}
+                                source={Images.getHelpIcon} />
+                        </Button>
+                        <Button small light style={[styles.transparentBtn]} onPress={this.onForgotPasswordClick.bind(this)}><Text style={width > 991 ? styles.forgotText : styles.forgotTextResponsive}>فراموشی کلمه عبور!</Text></Button>
+                    </View>
+                    <Button onPress={this.onRegisterClick.bind(this)} small light style={[styles.transparentBtn, styles.registerBtn]}><Text style={width > 991 ? styles.registerBtnText : styles.registerBtnTextRegister}>عضو نیستید؟ <Text style={width > 991 ? styles.registerText : styles.registerTextResponsive}>ثبت نام</Text>کنید</Text></Button>
                 </View>
-                <Button onPress={this.onRegisterClick.bind(this)} small light style={[styles.transparentBtn, styles.registerBtn]}><Text style={styles.registerBtnText}>عضو نیستید؟ <Text style={styles.registerText}>ثبت نام</Text>کنید</Text></Button>
             </View>
         )
     }

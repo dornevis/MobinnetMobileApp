@@ -40,32 +40,33 @@ class PlanView extends Component {
                     </Header>
                     <Tabs
                         tabBarUnderlineStyle={{ height: 0 }}
+                        tabContainerStyle={width > 769 ? styles.tabContainer : styles.tabContainerResponsive}
                     >
                         <Tab
                             heading="TD TURBO+ 4 To 40 Mbps"
-                            tabStyle={[styles.tabstyle, { borderRightWidth: 0.2 }]}
-                            textStyle={styles.textTabBar}
+                            tabStyle={styles.tabstyle}
+                            textStyle={width > 769 ? styles.textTabBar : styles.textTabBarResponsive}
                             activeTabStyle={{ backgroundColor: '#fff' }}
-                            activeTextStyle={styles.activeTextTabBar}>
+                            activeTextStyle={width > 769 ? styles.activeTextTabBar : styles.activeTextTabBarResponsive}>
                             <View style={styles.parentTabView}>
                                 <View style={styles.infoView}>
                                     <View style={styles.infoView}>
-                                        <Text style={styles.infoText}>Speed</Text>
-                                        <View style={[styles.ovalShape, { backgroundColor: '#84c126' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#ffd200' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#c22636' }]} />
+                                        <Text style={width > 769 ? styles.infoText : styles.infoTextResponsive}>Speed</Text>
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#84c126' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#ffd200' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#c22636' }]} />
                                     </View>
                                     <View style={styles.infoView}>
-                                        <Text style={styles.infoText}>Traffic</Text>
-                                        <View style={[styles.ovalShape, { backgroundColor: '#84c126' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#ffd200' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#c22636' }]} />
+                                        <Text style={width > 769 ? styles.infoText : styles.infoTextResponsive}>Traffic</Text>
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#84c126' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#ffd200' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#c22636' }]} />
                                     </View>
                                 </View>
                                 <View>
                                     <View style={styles.tabBody}>
                                         <View style={styles.bodyContent}>
-                                            <Text style={styles.countNumber}>1</Text>
+                                            <Text style={width > 769 ? styles.countNumber : styles.countNumberResponsive}>1</Text>
                                             <Card style={width > 769 ? styles.card : styles.cardResponsive}>
                                                 <CardItem style={width > 769 ? styles.cardItem : styles.cardItemResponsive}>
                                                     <Body style={styles.mainBody}>
@@ -84,14 +85,14 @@ class PlanView extends Component {
                                                                 <Button style={width > 769 ? styles.confirmBtn : styles.confirmBtnResponsive}><Text style={width > 769 ? styles.confirmTextBtn : styles.confirmTextBtnResponsive}>خرید</Text></Button>
                                                                 <Button style={width > 769 ? styles.reservationBtn : styles.reservationBtnResponsive}><Text style={width > 769 ? styles.confirmTextBtn : styles.confirmTextBtnResponsive}>رزرو</Text></Button>
                                                             </View>
-                                                            <Image source={Images.getVerticalLineImage} style={styles.borderStyle} />
+                                                            <Image source={Images.getVerticalLineImage} style={width > 769 ? styles.borderStyle : styles.borderStyleResponsive} />
                                                             <View style={[styles.cardBody, { flexDirection: 'column' }]}>
                                                                 <View style={{ flexDirection: 'row' }}>
                                                                     <View style={width > 769 ? styles.cardBodyContent : styles.cardBodyContentResponsive}>
-                                                                        <Text style={[width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive, { paddingTop: 7 }]}>5</Text>
-                                                                        <Text style={[width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive, { paddingTop: 5 }]}>گیگابایت</Text>
+                                                                        <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>5</Text>
+                                                                        <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>گیگابایت</Text>
                                                                     </View>
-                                                                    <View style={width > 769 ? styles.cardBodyContent : styles.cardBodyContentResponsive}>
+                                                                    <View style={width > 769 ? [styles.cardBodyContent, { marginTop: -5 }] : [styles.cardBodyContentResponsive, { marginTop: -2 }]}>
                                                                         <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>2</Text>
                                                                         <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>روز</Text>
                                                                     </View>
@@ -118,29 +119,29 @@ class PlanView extends Component {
                         </Tab>
                         <Tab
                             heading="TD TURBO 4 To 40 Mbps"
-                            tabStyle={[styles.tabstyle, { borderLeftWidth: 0.2 }]}
-                            textStyle={styles.textTabBar}
+                            tabStyle={styles.tabstyle}
+                            textStyle={width > 769 ? styles.textTabBar : styles.textTabBarResponsive}
                             activeTabStyle={{ backgroundColor: '#fff' }}
-                            activeTextStyle={styles.activeTextTabBar}>
+                            activeTextStyle={width > 769 ? styles.activeTextTabBar : styles.activeTextTabBarResponsive}>
                             <View style={styles.parentTabView}>
                                 <View style={styles.infoView}>
                                     <View style={styles.infoView}>
-                                        <Text style={styles.infoText}>Speed</Text>
-                                        <View style={[styles.ovalShape, { backgroundColor: '#84c126' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#ffd200' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#c22636' }]} />
+                                        <Text style={width > 769 ? styles.infoText : styles.infoTextResponsive}>Speed</Text>
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#84c126' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#ffd200' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#c22636' }]} />
                                     </View>
                                     <View style={styles.infoView}>
-                                        <Text style={styles.infoText}>Traffic</Text>
-                                        <View style={[styles.ovalShape, { backgroundColor: '#84c126' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#ffd200' }]} />
-                                        <View style={[styles.ovalShape, { backgroundColor: '#c22636' }]} />
+                                        <Text style={width > 769 ? styles.infoText : styles.infoTextResponsive}>Traffic</Text>
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#84c126' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#ffd200' }]} />
+                                        <View style={[width > 769 ? styles.ovalShape : styles.ovalShapeResponsive, { backgroundColor: '#c22636' }]} />
                                     </View>
                                 </View>
                                 <View>
                                     <View style={styles.tabBody}>
                                         <View style={styles.bodyContent}>
-                                            <Text style={styles.countNumber}>1</Text>
+                                            <Text style={width > 769 ? styles.countNumber : styles.countNumberResponsive}>1</Text>
                                             <Card style={width > 769 ? styles.card : styles.cardResponsive}>
                                                 <CardItem style={width > 769 ? styles.cardItem : styles.cardItemResponsive}>
                                                     <Body style={styles.mainBody}>
@@ -159,14 +160,14 @@ class PlanView extends Component {
                                                                 <Button style={width > 769 ? styles.confirmBtn : styles.confirmBtnResponsive}><Text style={width > 769 ? styles.confirmTextBtn : styles.confirmTextBtnResponsive}>خرید</Text></Button>
                                                                 <Button style={width > 769 ? styles.reservationBtn : styles.reservationBtnResponsive}><Text style={width > 769 ? styles.confirmTextBtn : styles.confirmTextBtnResponsive}>رزرو</Text></Button>
                                                             </View>
-                                                            <Image source={Images.getVerticalLineImage} style={styles.borderStyle} />
+                                                            <Image source={Images.getVerticalLineImage} style={width > 769 ? styles.borderStyle : styles.borderStyleResponsive} />
                                                             <View style={[styles.cardBody, { flexDirection: 'column' }]}>
                                                                 <View style={{ flexDirection: 'row' }}>
                                                                     <View style={width > 769 ? styles.cardBodyContent : styles.cardBodyContentResponsive}>
-                                                                        <Text style={[width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive, { paddingTop: 7 }]}>5</Text>
-                                                                        <Text style={[width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive, { paddingTop: 5 }]}>گیگابایت</Text>
+                                                                        <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>5</Text>
+                                                                        <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>گیگابایت</Text>
                                                                     </View>
-                                                                    <View style={width > 769 ? styles.cardBodyContent : styles.cardBodyContentResponsive}>
+                                                                    <View style={width > 769 ? [styles.cardBodyContent, { marginTop: -5 }] : [styles.cardBodyContentResponsive, { marginTop: -2 }]}>
                                                                         <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>2</Text>
                                                                         <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>روز</Text>
                                                                     </View>
@@ -193,14 +194,14 @@ class PlanView extends Component {
                         </Tab>
                         <Tab
                             heading="پیشنهاد ویژه"
-                            tabStyle={[styles.tabstyle, { borderLeftWidth: 0.2 }]}
-                            textStyle={styles.textTabBar}
-                            activeTabStyle={{ backgroundColor: '#fff', borderLeftWidth: 0.2, borderColor: '#84c126' }}
-                            activeTextStyle={styles.activeTextTabBar}>
+                            tabStyle={styles.tabstyle}
+                            textStyle={width > 769 ? styles.textTabBar : styles.textTabBarResponsive}
+                            activeTabStyle={{ backgroundColor: '#fff' }}
+                            activeTextStyle={width > 769 ? styles.activeTextTabBar : styles.activeTextTabBarResponsive}>
                             <View style={styles.parentTabView}>
                                 <View style={styles.specialInfoView}>
                                     <Text style={width > 769 ? styles.specialText : styles.specialTextResponsive}>پیشنهاد ویژه مبین‌نت برای شما</Text>
-                                    <Image source={Images.getStartIcon} style={{ width: 20, height: 20, marginLeft: 5, marginTop: 10 }} />
+                                    <Image source={Images.getStartIcon} style={{ width: 25, height: 25, marginLeft: 5, marginTop: 10 }} />
                                 </View>
                                 <View>
                                     <View style={styles.specialTabBody}>
@@ -210,7 +211,7 @@ class PlanView extends Component {
                                                     <Body style={styles.body}>
                                                         <View style={width > 769 ? styles.specialCardBody : styles.specialCardBodyResponsive}>
                                                             <View style={{ flexDirection: 'row' }}>
-                                                                <View style={styles.cardBodyContent}>
+                                                                <View style={width > 769 ? styles.cardBodyContent : styles.cardBodyContentResponsive}>
                                                                     <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>2</Text>
                                                                     <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>ماه</Text>
                                                                 </View>
@@ -221,9 +222,9 @@ class PlanView extends Component {
                                                                 <Text style={width > 769 ? styles.planDurationText : styles.planDurationTextResponsive}>4 تا 40</Text>
                                                             </View>
                                                         </View>
-                                                        <Image source={Images.getVerticalLineImage} style={styles.specialBorderStyle} />
+                                                        <Image source={Images.getVerticalLineImage} style={width > 769 ? styles.specialBorderStyle : styles.specialBorderStyleResponsive} />
                                                         <View style={width > 769 ? styles.specialPlanCardBody : styles.specialPlanCardBodyResponsive}>
-                                                            <View style={styles.cardBodyContent}>
+                                                            <View style={width > 769 ? styles.cardBodyContent : styles.cardBodyContentResponsive}>
                                                                 <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>100</Text>
                                                                 <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>گیگابایت</Text>
                                                             </View>

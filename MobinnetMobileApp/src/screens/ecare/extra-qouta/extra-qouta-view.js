@@ -40,12 +40,12 @@ class ExtraQoutaView extends Component {
                         </Right>
                     </Header>
                     <View style={styles.bodyContent}>
-                        <Text style={styles.countNumber}>1</Text>
+                        <Text style={width > 769 ? styles.countNumber : styles.countNumberResponsive}>1</Text>
                         <Card style={width > 769 ? styles.card : styles.cardResponsive}>
                             <CardItem style={width > 769 ? styles.cardItem : styles.cardItemResponsive}>
                                 <Body style={styles.mainBody}>
                                     <View style={styles.body}>
-                                        <View style={[styles.cardBody,{paddingTop:40}]}>
+                                        <View style={[styles.cardBody, { paddingTop: 40 }]}>
                                             <View style={{ flexDirection: 'row'}}>
                                                 <Image source={Images.getPriceImage} style={width > 769 ? styles.priceImage : styles.priceImageResponsive} />
                                                 <View style={styles.cardBodyContent}>
@@ -56,11 +56,11 @@ class ExtraQoutaView extends Component {
                                                     <Text style={width > 769 ? styles.priceInfoDetail : styles.priceInfoDetailResponsive}>400</Text>
                                                 </View>
                                             </View>
-                                            <Image source={Images.getHorizontalLineImage} style={styles.borderStyle} />
+                                            <Image source={Images.getHorizontalLineImage} style={width > 769 ? styles.borderStyle : styles.borderStyleResponsive} />
                                             <Button style={width > 769 ? styles.confirmBtn : styles.confirmBtnResponsive}><Text style={width > 769 ? styles.confirmTextBtn : styles.confirmTextBtnResponsive}>خرید</Text></Button>
                                         </View>
                                         <View style={styles.cardBody}>
-                                            <View style={{ flexDirection: 'row'}}>
+                                            <View style={{ flexDirection: 'row' }}>
                                                 <View style={styles.cardBodyContent}>
                                                     <Text style={width > 769 ? styles.textInfoTitle : styles.textInfoTitleResponsive}>5</Text>
                                                     <Text style={width > 769 ? styles.textInfoType : styles.textInfoTypeResponsive}>گیگابایت</Text>
